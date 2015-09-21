@@ -11,7 +11,7 @@
   #sortable { list-style-type: none; margin: 0; padding: 0; width: 20%; }
   #kaa{width:100px; height:100px;}
   #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-  html>body #sortable li { height: 10em; line-height: 1.2em; }
+  html>body #sortable li { height: 5em; line-height: 1.2em; }
    .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
   </style>
   <script>
