@@ -17,7 +17,7 @@
             #sortable li {margin: 3px 3px 3px 0; float: left; width: 1440px; height: 700px; font-size: 1em; text-align: center;}
             img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 800px; height: 600px;}
             div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:800px; height:600px;}
-            img{margin:-20px; margin-left:-60px; width:800px;  min-width:100%; height:600px; min-height:100%;}
+            img{margin:-20px; margin-left:-60px; width:1440px;  min-width:100%; height:700px; min-height:100%;}
         </style>
         <script>
             $(function() {
