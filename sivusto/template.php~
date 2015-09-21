@@ -15,14 +15,6 @@
 </head>
 <body>
 
-<style>
-            #sortable { list-style-type: none; margin: 0; padding: 0; width: 4500px; }
-            #sortable li {margin: 3px 3px 3px 0; float: left; width: 800px; height: 600px; font-size: 1em; text-align: center;}
-            img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 800px; height: 600px;}
-            div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:800px; height:600px;}
-            img{margin:-20px; margin-left:-60px; width:800px;  min-width:100%; height:600px; min-height:100%;}
-        </style>
-
 <div class="row">
 <div class="large-12 columns">
 <img src="http://placehold.it/1810x200&text=3D-Esitys otsikko">
@@ -56,9 +48,8 @@
 
 <div class="row">
 <div class="small-10 small-push-2 columns">
-<?php
-include ("isolaatikko.php"); 
-?>
+<img src="http://placehold.it/750x600&text=[Kuva]">
+<img src="http://placehold.it/750x600&text=[Kuva]">
 </div>
 <div class="small-2 small-pull-10 columns">
 <img src="http://placehold.it/300x217&text=[Kuva]">
@@ -100,6 +91,6 @@ include ("isolaatikko.php");
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/kaksilaatikkoa/dropzone.js"></script>
+
 </body>
 </html>

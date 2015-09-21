@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  
+  <title>jQuery.fullsizable example/demo</title>
   <meta name="description" content="jQuery fullsizable Example" />
   <meta name="author" content="Matthias Schmidt - http://m-schmidt.eu" />
   <style type="text/css" media="screen">
