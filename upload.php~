@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
     <head>
-        <title>Upload</title>
+        <title>dropzone</title>
         <meta charset="UTF-8">
        <style>
         h2{color: #999999; }
@@ -16,7 +16,6 @@
     <body>
  <h2>KOKEILE TIPUTTAA KUVA RUUTUUN!</h2>
 <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="upload.php" method="POST">
-    <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
 </form>
 <?php
 if(!empty($_FILES)){
