@@ -122,7 +122,7 @@ nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
       paramName: "file",
       createImageThumbnails: true,
       maxThumbnailFilesize: 10,
-      thumbnailWidth: 1440,
+      thumbnailWidth: 720,
       thumbnailHeight: 700,
       filesizeBase: 1000,
       maxFiles: null,
