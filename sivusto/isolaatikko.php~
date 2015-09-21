@@ -1,16 +1,26 @@
-<ul id="sortable">
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
-      </form>
-  </li>
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
-      </form>
-  </li>
-</ul>
-    </body>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-     <script src="dropzone.js"></script>
+
+        <title>dropzone</title>
+        <meta charset="UTF-8">
+        
+        <script>
+            $(function() {
+              $( "#sortable" ).sortable();
+              $( "#sortable" ).disableSelection();
+            });
+        </script>
+
+    </head>
+
+    <body>
+<a form action="/file-upload" img src="http://placehold.it/300x217&text=[Kuva]"   id="kaa">
+</a>
+</ul>
+
+    </body>
+ <script src="dropzone.js"></script>
      <script type="text/javascript">
     Dropzone.options.kaa = {
         accept: function(file, done) {
@@ -25,18 +35,6 @@
             });
         }
     };
-     Dropzone.options.kab = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
+     
 
 </script>
