@@ -35,3 +35,2040 @@ template.php
 template.php
 template.php
 template.php
+
+*** These modified files were found in JOE when it aborted on Mon Sep 21 10:11:00 2015
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File '(Unnamed)'
+<ul id="sortable">
+  <li class="ui-state-default">
+      <form action="/file-upload" class="dropzone" id="kaa">
+      </form>
+  </li>
+  <li class="ui-state-default">
+      <form action="/file-upload" class="dropzone" id="kab">
+      </form>
+  </li>
+</ul>
+    </body>
+
+     <script src="dropzone.js"></script>
+     <script type="text/javascript">
+    Dropzone.options.kaa = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+     Dropzone.options.kab = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+
+</script>
+*** File 'isolaatikko.php'
+Last login: Mon Sep 21 08:28:45 on ttys000
+Paakayttaja-iMac-97:~ jonatan.lagland$ ssh jonatanlogland@cosmo.kpedu.fi
+jonatanlogland@cosmo.kpedu.fi's password: 
+Last login: Mon Sep 21 08:30:14 2015 from 192.168.1.1
+jonatanlogland@cosmo:~$ ls
+a.out                tehtava006.cpp   tehtava026.cpp   tehtava049.cpp~
+DEADJOE              tehtava007.cpp   tehtava026.cpp~  tehtava050.cpp
+h2at1.cpp            tehtava007.cpp~  tehtava027.cpp   tehtava051.cpp
+h3a.cpp              tehtava008.cpp   tehtava027.cpp~  tehtava051.cpp~
+h3at3.cpp            tehtava009.cpp   tehtava028.cpp   tehtava052.cpp
+harjoitus2.cpp       tehtava010.cpp   tehtava029.cpp   tehtava053.cpp
+html2014             tehtava010.cpp~  tehtava029.cpp~  tehtava053.cpp~
+jonatanlagland1.cpp  tehtava011.cpp   tehtava030.cpp   tehtava054.cpp
+jonatanlagland.cpp   tehtava011.cpp~  tehtava031.cpp   tehtava055.cpp
+jonatanlagland.cpp~  tehtava012.cpp   tehtava032.cpp   tehtava056.cpp
+k3t1.cpp             tehtava012.cpp~  tehtava033.cpp   tehtava056.cpp~
+kuukaudet.cpp        tehtava013.cpp   tehtava033.cpp~  tehtava057.cpp
+kuukaudet.txt        tehtava013.cpp~  tehtava034.cpp   tehtava057.cpp~
+logo.cpp             tehtava014.cpp   tehtava034.cpp~  tehtava058.cpp
+ohjelmointi          tehtava014.cpp~  tehtava035.cpp   tehtava058.cpp~
+perintä.css          tehtava015.cpp   tehtava036.cpp   tehtava2.cpp
+php                  tehtava016.cpp   tehtava036.cpp~  tehtava3.cpp
+poissaolot.cpp       tehtava017.cpp   tehtava037.cpp   tehtava3.cpp~
+public_html          tehtava018.cpp   tehtava037.cpp~  tehtava4.cpp
+sanat.txt            tehtava019.cpp   tehtava038.cpp   tehtava56.cpp
+stream.cpp           tehtava019.cpp~  tehtava040.cpp   tehtava5.cpp
+tallenna.dat         tehtava020.cpp   tehtava041.cpp   tekstiseikkailu1.cpp
+tarina.cpp           tehtava020.cpp~  tehtava042.cpp   tekstiseikkailu1.cpp~
+tarina.cpp~          tehtava021.cpp   tehtava043.cpp   tekstiseikkailu.cpp
+tehtava001.cpp       tehtava021.cpp~  tehtava044.cpp   tekstiseikkailu.cpp~
+tehtava001.cpp~      tehtava022.cpp   tehtava045.cpp   testi122.cpp
+tehtava002.cpp       tehtava022.cpp~  tehtava045.cpp~  testi123456.cpp
+tehtava002.cpp~      tehtava023.cpp   tehtava046.cpp   testikansio
+tehtava003.cpp       tehtava023.cpp~  tehtava046.cpp~  tulostus.cpp
+tehtava003.cpp~      tehtava024.cpp   tehtava047.cpp   tulos.txt
+tehtava004.cpp       tehtava025.cpp   tehtava048.cpp
+tehtava005.cpp       tehtava025.cpp~  tehtava049.cpp
+jonatanlogland@cosmo:~$ cd public_html/
+jonatanlogland@cosmo:~/public_html$ ls
+DEADJOE        foundation2.css~  proto2.php   sass2015       silmu003.php~
+dropzone.css   foundation.css    proto2.php~  silmu001.php   silmu004.php
+dropzone.css~  foundation.css~   proto3.php   silmu001.php~  template.php~
+dropzone.js    html2014          proto3.php~  silmu002.php
+dropzone.js~   php2015           proto.php    silmu002.php~
+Foundation     projekti          proto.php~   silmu003.php
+jonatanlogland@cosmo:~/public_html$ cd projekti/
+jonatanlogland@cosmo:~/public_html/projekti$ ls
+Projekti  Trafi
+jonatanlogland@cosmo:~/public_html/projekti$ cd Projekti/
+jonatanlogland@cosmo:~/public_html/projekti/Projekti$ ls
+foundation2.css  README.md     template.php~  vasenreuna.php
+kaksilaatikkoa   sivusto       testi          vasenreuna.php~
+kikkeli.txt      template.php  upload.php
+jonatanlogland@cosmo:~/public_html/projekti/Projekti$ cd sivusto/
+jonatanlogland@cosmo:~/public_html/projekti/Projekti/sivusto$ ls
+DEADJOE          isolaatikko.php~  template.php~        template-upload.php~
+isolaatikko.php  template.php      template-upload.php  upload.php
+jonatanlogland@cosmo:~/public_html/projekti/Projekti/sivusto$ joe template.php
+Processing '/etc/joe/joerc'...Processing '/etc/joe/ftyperc'...done
+done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    I A  template.php (php)  <?php    Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+** Joe's Own Editor v3.7 ** (utf-8) ** Copyright © 2008 **
+
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+    I A  template.php (php)  <?php      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+    I A  template.php (php)  <?php      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+    I A  template.php (php)  <?php        Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+    I A  template.php (php)  <?php        Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+    I A  template.php (php)  <?php           Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+    I A  template.php (php)  <?php               Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+    I A  template.php (php)  <?php               Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+    I A  template.php (php)  <?php                 Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+    I A  template.php (php)  <?php                 Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+    I A  template.php (php)  <?php                    Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+    I A  template.php (php)  <?php                    Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+
+    I A  template.php (php)  <?php                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+
+    I A  template.php (php)  <?php                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+    I A  template.php (php)  <?php                         Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+    I A  template.php (php)  <?php                         Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+    I A  template.php (php)  <?php                          Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+    I A  template.php (php)  <?php                          Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+    I A  template.php (php)  <?php                            Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+    I A  template.php (php)  <?php                            Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+    I A  template.php (php)  <?php                               Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+    I A  template.php (php)  <?php                               Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+    I A  template.php (php)  <?php                                  Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+    I A  template.php (php)  <?php                                  Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+    I A  template.php (php)  <?php                                   Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+    I A  template.php (php)  <?php                                   Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+    I A  template.php (php)  <?php                                    Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+    I A  template.php (php)  <?php                                    Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    I A  template.php (php)  <?php                                     Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    I A  template.php (php)  <?php                                     Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+    I A  template.php (php)  <?php                                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+    I A  template.php (php)  <?php                                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+    I A  template.php (php)  <?php                                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+    I A  template.php (php)  <?php                                      Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+
+      var doc = document.documentElement;
+    I A  template.php (php)  <?php                                       Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+    I A  template.php (php)  <?php                                        Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+    I A  template.php (php)  <?php                                        Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+<script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/kaksilaatikkoa/dropzone.js"></script>
+</body>
+    I A  template.php (php)  <?php                                         Row 59   Col 1    8:32  Ctrl-K H for help
+</div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-10 small-push-2 columns">
+<?php
+include ("isolaatikko.php");
+?>
+</div>
+<div class="small-2 small-pull-10 columns">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+<img src="http://placehold.it/300x217&text=[Kuva]">
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="large-6 columns">
+<p>© Copyright Loco</p>
+</div>
+</ul>
+</div>
+
+
+</footer>
+<script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+  </script>
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script>
+
+      $(document).foundat
+*** File '(Unnamed)'
+fullscreen.php
+template.php
+template.php
+fullscreen.php
+fullscreen.php
+template.php
+template.php
+fullscreen.php
+isolaatikko.php
+proto.php
+isolaatikko.php
+
+*** These modified files were found in JOE when it aborted on Mon Sep 21 10:47:01 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+1
+
+*** File '(Unnamed)'
+template.php
+fullscreen.php
+isolaatikko.php
+proto.php
+proto.php
+template.php
+template.php
+template.php
+template.php
+template.php
+dropzone.css
+
+*** These modified files were found in JOE when it aborted on Mon Sep 21 11:54:47 2015
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dropzone dz-clickable
+.dropzone dz-clickable displayed
+.dropzone .dz-clickable .display 
+.dropzone .dz-clickable .display {
+.dropzone
+
+*** File '(Unnamed)'
+template.php
+template.php
+template.php
+template.php
+template.php
+foundation2.css
+template.php
+isolaatikko.php
+dropzone.css
+dropzone.css
+isolaatikko.php
+isolaatikko.php
+isolaatikko.php
+isolaatikko.php
+isolaatikko.php
+isolaatikko.php
+isolaatikko.php
+
+*** These modified files were found in JOE when it aborted on Mon Sep 21 11:55:49 2015
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+isolaatikko.php
+isolaatikko.php
+dropzone.css
+dropzone.css
+dropzone.css
+dropzone.css
+foundation2.css
+foundation2.css
+foundation2.css
+foundation2.css
+template.php
