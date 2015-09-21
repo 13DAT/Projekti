@@ -10,7 +10,7 @@
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 </head>
@@ -40,9 +40,9 @@
 </div>
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="#" class="button radius">Lataa</a></li>
-<li><a href="#" class="button radius">Koko näyttö</a></li>
-<li><a href="#" class="button radius">Äänet</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-ääni.php" class="button radius">Äänet</a></li>
 </ul>
 </div>
 </div>

@@ -1,4 +1,7 @@
-
+/*
+ * The MIT License
+ * Copyright (c) 2012 Matias Meno <m@tias.me>
+ */
 @-webkit-keyframes passing-through {
   0% {
     opacity: 0;
@@ -383,3 +386,4 @@
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-bottom: 6px solid #be2626; }
+
