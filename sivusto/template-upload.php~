@@ -53,7 +53,9 @@
 <hr>
 </div>
 </div>
-
+<div class="row">
+<div class="large-12 columns">
+<center>
 <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="upload.php" method="POST">
 </form>
 <?php
@@ -68,6 +70,10 @@ echo "File is valid, and was successfully uploaded.\n";
                     }
 }
         ?>
+        
+</div>
+</div>
+</center>
 <div class="row">
 <div class="large-12 columns">
 <hr>
