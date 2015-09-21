@@ -14,7 +14,7 @@
 
 </head>
 <body>
-
+<?php include ("fullscreen.php"); ?>
 <div class="row">
 <div class="large-12 columns">
 <img src="http://placehold.it/1810x200&text=3D-Esitys otsikko">
