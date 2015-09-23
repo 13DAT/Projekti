@@ -34,14 +34,14 @@
 	if(!empty($_FILES)){
 		$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
 		    $fileName = $_FILES['file']['name'];
-	        $targetFile = $targetDir.$fileName;
+            $str = time($_FILES['user_image']['name'], PATHINFO_EXTENSION);
+	        $targetFile = $targetDir. md5(time($_FILES['user_image']['name']) ).$str;
 	if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
 		echo "Lataus onnistui\n";
     } else {
         echo "\n";
     }
 	}
-	$filename = md5(time());
         ?>
     </body>
 

@@ -31,18 +31,37 @@
 </form>
 <?php
     
-	if(!empty($_FILES)){
-		$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
-		    $fileName = $_FILES['file']['name'];
-            $str = time($_FILES['user_image']['name'], PATHINFO_EXTENSION);
-	        $targetFile = $targetDir. md5(time($_FILES['user_image']['name']) ).$str;
-	if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
-		echo "Lataus onnistui\n";
-    } else {
-        echo "\n";
-    }
-	}
-        ?>
+    $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
+                if(mysqli_connect_errno()) {
+                    die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
+                }
+                $yhteys->set_charset('utf8');
+						$asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
+					if(!empty($_FILES)){
+						$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
+					    $fileName = $_FILES['file']['name'];
+    			        $str = time($_FILES['user_image']['name'], PATHINFO_EXTENSION);
+				        $targetFile = $targetDir. md5(time($_FILES['user_image']['name']) ).$str;
+					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
+					echo "Lataus onnistui\n";
+    				} else {
+    				    echo "\n";
+    				}
+					}
+					if( $_POST['laheta']){
+                        $sql = ("INSERT INTO projekti_äänet (md5) VALUES('$asia');
+                                UPDATE projekti_äänet
+                                SET md5 = '$asia'
+                                WHERE id = ID;");
+
+	 				if($tulos=$yhteys->multi_query($sql)) {
+                    	echo "Varaus onnistui!";}
+                    else {
+                        echo "Varaus epäonnistui!" . " " . $sql . " " . $yhteys->error;
+                    }
+     $yhteys->close();
+     }
+?>
     </body>
 
      <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
