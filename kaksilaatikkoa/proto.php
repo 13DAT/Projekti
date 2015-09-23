@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -27,10 +26,6 @@
 <ul id="sortable">
   <li class="ui-state-default">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
-      </form>
-  </li>
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
       </form>
   </li>
 </ul>
