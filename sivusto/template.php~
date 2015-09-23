@@ -37,7 +37,7 @@
 <ul class="button-group">
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
-<li><a href="#" class="button radius">Äänet</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-ääni.php" class="button radius">Äänet</a></li>
 </ul>
 </div>
 </div>
@@ -65,15 +65,14 @@
 <hr>
 </div>
 </div>
-<div class="row">
-<div class="large-6 columns">
-<p>© Copyright Loco</p>
-</div>
 </ul>
+<div class="row">
+<div class="large-6">
+<?php include("footer.php"); ?>
+</div>
 </div>
 
 
-</footer>
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +

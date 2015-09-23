@@ -6093,33 +6093,3 @@ th.hide-for-touch {
 /*# sourceMappingURL=foundation.css.map */
 
 
-.testiboxi1 {
-
-margin: 3px 3px 3px 0;
-  float: left;
-  width: 800px;
-  height: 600px;
-  font-size: 1em;
-  text-align: center;
-}
-
-
-
-.testiboxi2 {
-  box-sizing: border-box;
-  color: rgb(85, 85, 85);
-  cursor: pointer;
-  display: inline;
-  font-size: 16px;
-  font-weight: normal;
-  height: auto;
-  list-style-type: none;
-  text-align: center;
-  width: auto;
-}
-.testiboxi3 {
-border: 1px solid #d3d3d3;
-  background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
-  font-weight: normal;
-  color: #555555;
-}

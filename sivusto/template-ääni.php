@@ -9,7 +9,7 @@
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/foundation2.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>

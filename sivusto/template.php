@@ -50,7 +50,7 @@
 </div>
 
 <div class="row">
-<div class="small-10 small-push-2 columns">
+<div class="large-10 large-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
 <div class="small-2 small-pull-10 columns">
@@ -65,15 +65,14 @@
 <hr>
 </div>
 </div>
-<div class="row">
-<div class="large-6 columns">
-<p>© Copyright Loco</p>
-</div>
 </ul>
+<div class="row">
+<div class="large-6">
+<?php include("footer.php"); ?>
+</div>
 </div>
 
 
-</footer>
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
