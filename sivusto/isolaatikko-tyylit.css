@@ -1,5 +1,5 @@
 #sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { float: left; width: 1440px; height: 700px; font-size: 5em; text-align: center;}
+#sortable li { float: right; width: 1440px; height: 700px; font-size: 5em; text-align: center; background-color:#E8E8E8;}
 img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 1440px; height: 700px;}
 div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:1440px; height:700px;}
 img{margin:-20px; margin-left:-60px;}

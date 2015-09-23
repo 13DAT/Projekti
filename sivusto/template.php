@@ -11,21 +11,15 @@
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
-<link rel="stylesheet" href="isolaatikko-tyylit.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
-<style>
-  
-    #tasaus {
-    padding-top:50px;
-    }
-</style>
 
 </head>
 <body>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">3d esitys</h1>
 </header>
@@ -33,13 +27,13 @@
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <div class="nav-bar left">
 <audio id="myTune">
   <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">
@@ -58,7 +52,7 @@
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>                          
 </div>
 </div>
@@ -77,13 +71,13 @@
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
 </ul>
 <div class="row">
-<div class="large-6">
+<div class="small-6 columns">
 <?php include("footer.php"); ?>
 </div>
 </div>
