@@ -38,15 +38,7 @@
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
 </ul>
 </div>
-<div class="nav-bar right">
-<ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-ääni.php" class="button radius">Äänet</a></li>
-</ul>
-</div>
-</div>
-</div>
+
 
 <div class="row">
 <div class="large-12 columns">

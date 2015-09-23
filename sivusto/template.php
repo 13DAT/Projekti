@@ -38,7 +38,7 @@
 <div class="small-12 columns">
 <div class="nav-bar left">
 <audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">
+  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
   </audio>
   <button onclick="document.getElementById('myTune').play()">Play Music</button>
   <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
