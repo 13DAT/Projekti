@@ -58,3 +58,85 @@ vasenreuna.php
 vasenreuna.php
 vasenreuna.php
 vasenreuna.php
+
+*** These modified files were found in JOE when it aborted on Wed Sep 23 11:49:04 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File 'vasenreuna2.php'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>vasenreuna</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
+
+
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+</head>
+<body>
+<ul id="sortable">
+<?php
+#Otetaan yhteys palvelimeen ja valitaan data13- tietokanta käyttöön
+  $yhteys=mysqli_connect("localhost", "data14", "mv2Mqbm888DvqbjT","data14");
+  #Tarkistetaan yhteyden tila
+  if(mysqli_connect_errno()) {
+    die("MySQL, Virhe yhteyden luonnissa: ". mysqli_connect_error());
+
+  }
+  #Valitaan tietokannan merkistä
+  $yhteys->set_charset('utf8');
+$tulos = mysqli_query($yhteys,,"SELECT * FROM projekti_kuvat ORDER BY id");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script type="text/javascript">
+</script>
+
+
+
+
+</body>
+</html>
+*** File '(Unnamed)'
+vasenreuna.php
+vasenreuna.php
+vasenreuna.php
+append.php
+vasenreuna.php
+vasenreuna.php
+vasenreuna2.php
+vasenreuna2.php
+tavoite1.php
+vasenreuna2.php
+vasenreuna2.php
