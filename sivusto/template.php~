@@ -21,7 +21,9 @@
 
 <div class="row">
 <div class="large-12 columns">
-<img src="http://placehold.it/1810x200&text=3D-Esitys">
+<header>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">3d esitys</h1>
+</header>
 </div>
 </div>
 

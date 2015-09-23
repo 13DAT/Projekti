@@ -14,7 +14,12 @@
 <link rel="stylesheet" href="isolaatikko-tyylit.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
-
+<style>
+  
+    #tasaus {
+    padding-top:50px;
+    }
+</style>
 
 </head>
 <body>
@@ -62,6 +67,7 @@
 <div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
+
 <div class="small-2 small-pull-10 columns">
 <img src="http://placehold.it/300x217&text=[Kuva]">
 <img src="http://placehold.it/300x217&text=[Kuva]">
@@ -69,6 +75,7 @@
 <img src="http://placehold.it/300x217&text=[Kuva]">
 </div>
 </div>
+
 <div class="row">
 <div class="large-12 columns">
 <hr>
