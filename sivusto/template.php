@@ -10,7 +10,8 @@
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
+<link rel="stylesheet" href="isolaatikko-tyylit.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 
@@ -20,7 +21,9 @@
 
 <div class="row">
 <div class="large-12 columns">
-<img src="http://placehold.it/1810x200&text=3D-Esitys">
+<header>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">3d esitys</h1>
+</header>
 </div>
 </div>
 
@@ -30,14 +33,20 @@
 </div>
 </div>
 
-
 <div class="row">
 <div class="large-12 columns">
+<div class="nav-bar left">
+<audio id="myTune">
+  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="document.getElementById('myTune').play()">Play Music</button>
+  <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
+  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+</div>
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-ääni.php" class="button radius">Äänet</a></li>
 </ul>
 </div>
 </div>
@@ -50,7 +59,7 @@
 </div>
 
 <div class="row">
-<div class="large-10 large-push-2 columns">
+<div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
 <div class="small-2 small-pull-10 columns">
