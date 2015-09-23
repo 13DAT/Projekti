@@ -10,15 +10,9 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
 <link rel="stylesheet" href="dropzone.css">
+<link rel="stylesheet" href="2box.css">
         <title>dropzone</title>
         <meta charset="UTF-8">
-        <style>
-            #sortable { list-style-type: none; margin: 0; padding: 0; width: 4500px; }
-            #sortable li {margin: 3px 3px 3px 0; float: left; width: 720px; height: 700px; font-size: 1em; text-align: center;}
-            img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 720px; height: 700px;}
-            div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:720px; height:700px;}
-            img{margin:-20px; margin-left:-60px; width:720px;  min-width:100%; height:700px; min-height:100%;}
-        </style>
         <script>
             $(function() {
               $( "#sortable" ).sortable();
@@ -29,7 +23,7 @@
     </head>
 
     <body>
-
+<!-- dropzone laatikot  -->
 <ul id="sortable">
   <li class="ui-state-default">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
@@ -41,7 +35,7 @@
   </li>
 </ul>
     </body>
-
+<!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
      <script src="dropzone.js"></script>
      <script type="text/javascript">
 	Dropzone.options.kaa = {

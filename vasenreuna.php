@@ -7,13 +7,10 @@
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
-  <style>
-  #sortable { list-style-type: none; margin: 0; padding: 0; width: 20%; }
-  #kaa{width:100px; height:100px;}
-  #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-  html>body #sortable li { height: 10em; line-height: 1.2em; }
-   .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
-  </style>
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
+
+
   <script>
   $(function() {
     $( "#sortable" ).sortable({
@@ -26,12 +23,83 @@
 <body>
  
 <ul id="sortable">
-  <li class="ui-state-default">Kuva1</li>
-  <li class="ui-state-default">Kuva2</li>
-  <li class="ui-state-default">Kuva3</li>
-  <li class="ui-state-default">Kuva4</li>
+  <li class="ui-state-default">kuva1
+<a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+  <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa"></form>
+  </a>
+</li>
+         
+  <li class="ui-state-default">Kuva2
+ <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+  <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
+        </form></li>
+  
+  <li class="ui-state-default">Kuva3
+<a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+<form action="/file-upload" class="dropzone dz-clickable displayed" id="kac">
+      </form></li>
+
+  <li class="ui-state-default">Kuva4
+  <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+  <form action="/file-upload" class="dropzone dz-clickable displayed" id="kad">
+        </form></li>
 </ul>
- 
+     <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+     <script type="text/javascript">
+	Dropzone.options.kaa = {
+		accept: function(file, done) {
+		    console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+	};
+     Dropzone.options.kab = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+    
+    Dropzone.options.kac = {            
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+    Dropzone.options.kad = {            
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    }; 
+</script> 
  
 </body>
 </html>

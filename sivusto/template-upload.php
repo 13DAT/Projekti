@@ -9,7 +9,7 @@
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/foundation2.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -38,15 +38,7 @@
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
 </ul>
 </div>
-<div class="nav-bar right">
-<ul class="button-group">
-<li><a href="#" class="button radius">Lataa</a></li>
-<li><a href="#" class="button radius">Koko näyttö</a></li>
-<li><a href="#" class="button radius">Äänet</a></li>
-</ul>
-</div>
-</div>
-</div>
+
 
 <div class="row">
 <div class="large-12 columns">
@@ -79,15 +71,16 @@ echo "File is valid, and was successfully uploaded.\n";
 <hr>
 </div>
 </div>
-<div class="row">
-<div class="large-6 columns">
-<p>© Copyright Loco</p>
-</div>
 </ul>
+<div class="row">
+<div class="large-6">
+<?php include("footer.php"); ?>
+</div>
 </div>
 
 
-</footer>
+
+
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
