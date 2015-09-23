@@ -23,7 +23,7 @@
             img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 14.4em; height: 7em;}
             div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:14.4em; height:7em;}
             img{margin:-43px; margin-left:-20px; width:14.4em;  min-width:100%; height:7em; min-height:100%;}
-            button{margin:-43px; margin-left:-20px;}
+            img{margin:-43px; margin-left:-20px;}
               </style>
   <script>
   $(function() {
@@ -39,19 +39,22 @@
 <ul id="sortable">
   <li class="ui-state-default">kuva1
 <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
-  <img aria-hidden=true src="http://www.ennenjanyt.net/wp-content/uploads/image/2008_2/huhmarniemi_kuva4.jpg"/>
+  <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa"></form>
   </a>
 </li>
          
   <li class="ui-state-default">Kuva2
+ <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
   <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
         </form></li>
   
   <li class="ui-state-default">Kuva3
+<a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
 <form action="/file-upload" class="dropzone dz-clickable displayed" id="kac">
       </form></li>
 
   <li class="ui-state-default">Kuva4
+  <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
   <form action="/file-upload" class="dropzone dz-clickable displayed" id="kad">
         </form></li>
 </ul>
