@@ -10,15 +10,15 @@
     <body>
 <!-- dropzone laatikot  -->
 <ul id="sortable">
-  <li>
+  <li class="ui-state-default">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
       </form>
   </li>
 </ul>
     </body>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
-      <script src="dropzone.js"></script>
-           <script type="text/javascript">
+     <script src="dropzone.js"></script>
+     <script type="text/javascript">
     Dropzone.options.kaa = {
         accept: function(file, done) {
             console.log("uploaded");

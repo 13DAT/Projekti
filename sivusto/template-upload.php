@@ -18,13 +18,15 @@
 
 
 <div class="row">
-<div class="large-12 columns">
-<img src="http://placehold.it/1810x200&text=Lataa tiedosto tietokantaan">
+<div class="small-12 columns">
+<header>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">Lataa tiedosto</h1>
+</header>
 </div>
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
@@ -32,7 +34,7 @@
 
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <div class="nav-bar left">
 <ul class="button-group">
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
@@ -41,12 +43,12 @@
 
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <center>
 <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="upload.php" method="POST">
 </form>
@@ -67,13 +69,13 @@ echo "File is valid, and was successfully uploaded.\n";
 </div>
 </center>
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
 </ul>
 <div class="row">
-<div class="large-6">
+<div class="small-6">
 <?php include("footer.php"); ?>
 </div>
 </div>
