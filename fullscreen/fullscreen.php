@@ -54,12 +54,7 @@
   <body>
   <h1>jQuery.fullsizable</h1>
 <button><a href="http://i.imgur.com/LVYDgNw.jpg" class="fancybox" rel="gallery-1"><img src="http://the.url.of/your/button.png" alt="open gallery" /></a></button> 
- <div id="container">
-    <a href="http://i.imgur.com/LVYDgNw.jpg">
-      <img title="Huorra"
-            alt="Steam locomotives of the Chicago &amp; North Western Railway."
-            src="http://i.imgur.com/LVYDgNw.jpg">
-    </a>
+ <img src="http://i.imgur.com/LVYDgNw.jpg">
    <a href="http://img1.wikia.nocookie.net/__cb20140609003945/incredible-crew/images/3/38/Twerk.gif">
       <img title="Icebergs in the High Arctic"
             alt="”The debris loading isn't particularly extensive, but the color is usual.”"
