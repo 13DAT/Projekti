@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-<div id="clearfooter"></div>
-  <div class="footer">
-    <p>&copy; Copyright Loco</p>
-  </div>
+
+<footer class="site-footer">
+    &copy; Copyright Loco
+  </footer>
