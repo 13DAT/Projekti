@@ -65,10 +65,10 @@
 </div>
 
 <div class="small-2 small-pull-10 columns">
-<p>Kuva<p>
-<p>Kuva<p>
-<p>Kuva<p>
-<p>Kuva<p>
+<p>kuva</p>
+<p>kuva</p>
+<p>kuva</p>
+<p>kuva</p>
 </div>
 </div>
 
