@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer-style.css"/>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 </head>
 <body>
@@ -74,9 +75,12 @@ echo "File is valid, and was successfully uploaded.\n";
 </div>
 </div>
 </ul>
+
 <div class="row">
 <div class="small-6">
-<?php include("footer.php"); ?>
+
+    <p>&copy; Copyright Loco</p>
+
 </div>
 </div>
 

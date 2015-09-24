@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>3D Esitys</title>
+<title>Kolmiulotteinen esitys</title>
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
@@ -23,7 +23,7 @@
 <div class="row">
 <div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">3d esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
 </header>
 </div>
 </div>
@@ -33,21 +33,21 @@
 <hr>
 </div>
 </div>
-
+                                     
 <div class="row">
 <div class="small-12 columns">
 <div class="nav-bar left">
 <audio id="myTune">
   <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
   </audio>
-  <button onclick="document.getElementById('myTune').play()">Play Music</button>
-  <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
-  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+  <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
+  <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
+  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa tiedosto</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Erkan koodinpätkä</a></li>
 </ul>
 </div>
 </div>

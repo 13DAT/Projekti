@@ -17,7 +17,7 @@
 </ul>
     </body>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
-     <script src="dropzone.js"></script>
+     <script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
      <script type="text/javascript">
     Dropzone.options.kaa = {
         accept: function(file, done) {
