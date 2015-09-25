@@ -24,23 +24,23 @@
  
 <ul id="sortable">
   <li class="ui-state-default">kuva1
-<a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+<a class="th"id="th" role="button" aria-label="Thumbnail" href="">
   <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa"></form>
   </a>
 </li>
          
   <li class="ui-state-default">Kuva2
- <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+ <a class="th"id="th" role="button" aria-label="Thumbnail" href="">
   <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
         </form></li>
   
   <li class="ui-state-default">Kuva3
-<a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+<a class="th"id="th" role="button" aria-label="Thumbnail" href="">
 <form action="/file-upload" class="dropzone dz-clickable displayed" id="kac">
       </form></li>
 
   <li class="ui-state-default">Kuva4
-  <a class="th"id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/template.php">
+  <a class="th"id="th" role="button" aria-label="Thumbnail" href="">
   <form action="/file-upload" class="dropzone dz-clickable displayed" id="kad">
         </form></li>
 </ul>

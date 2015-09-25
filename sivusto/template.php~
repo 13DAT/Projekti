@@ -5,55 +5,65 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>3D Esitys</title>
+<title>Kolmiulotteinen esitys</title>
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
-<link rel="stylesheet" href="isolaatikko-tyylit.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
+<style>
 
+body {
+    background-color: #b0c4de;
+}
+
+</style>
 
 </head>
 <body>
 
+<div id="heps">
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">3d esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
 </header>
 </div>
 </div>
-
+</div>
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
-
+                                     
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <div class="nav-bar left">
 <audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">
+  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
   </audio>
-  <button onclick="document.getElementById('myTune').play()">Play Music</button>
-  <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
-  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+    <button onclick="document.getElementById('myTune');">Valitse musiikkia</button>
+  <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
+  <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
+  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Koko näyttö</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa tiedosto</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Erkan koodinpätkä</a></li>
 </ul>
 </div>
 </div>
 </div>
 
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>                          
 </div>
 </div>
@@ -62,21 +72,23 @@
 <div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
+
 <div class="small-2 small-pull-10 columns">
-<img src="http://placehold.it/300x217&text=[Kuva]">
-<img src="http://placehold.it/300x217&text=[Kuva]">
-<img src="http://placehold.it/300x217&text=[Kuva]">
-<img src="http://placehold.it/300x217&text=[Kuva]">
+<p>kuva</p>
+<p>kuva</p>
+<p>kuva</p>
+<p>kuva</p>
 </div>
 </div>
+
 <div class="row">
-<div class="large-12 columns">
+<div class="small-12 columns">
 <hr>
 </div>
 </div>
 </ul>
 <div class="row">
-<div class="large-6">
+<div class="small-6 columns">
 <?php include("footer.php"); ?>
 </div>
 </div>

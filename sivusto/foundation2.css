@@ -70,7 +70,7 @@ a:hover {
   cursor: pointer; }
 
 img {
-  max-width: 100%;
+  width: auto;
   height: auto; }
 
 img {
@@ -109,7 +109,7 @@ img {
 
 img {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: center; }
 
 textarea {
   height: auto;

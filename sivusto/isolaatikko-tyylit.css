@@ -1,5 +1,4 @@
-#sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { float: left; width: 1440px; height: 700px; font-size: 5em; text-align: center;}
-img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 1440px; height: 700px;}
-div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width:1440px; height:700px;}
-img{margin:-20px; margin-left:-60px;}
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 1440px; height:700px; float: right;}
+#sortable li { margin: 3px 3px 3px 0; float:left; width: 1440px; height: 700px; font-size: 3em;}
+div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{width: 1440px; height: 700px;}
+img{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 1440px; max-height: 700px;}
