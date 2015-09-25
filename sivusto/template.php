@@ -17,9 +17,11 @@
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 
+
 </head>
 <body>
 
+<div id="heps">
 <div class="row">
 <div class="small-12 columns">
 <header>
@@ -27,7 +29,7 @@
 </header>
 </div>
 </div>
-
+</div>
 <div class="row">
 <div class="small-12 columns">
 <hr>
@@ -40,6 +42,7 @@
 <audio id="myTune">
   <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
   </audio>
+    <button onclick="document.getElementById('myTune');">Valitse musiikkia</button>
   <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
