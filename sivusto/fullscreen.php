@@ -73,7 +73,7 @@
     <a href="https://lh3.googleusercontent.com/-49LWhpN0s3k/VOiQYP51bDI/AAAAAAAAANQ/Je0mO5u7efI/s630-fcrop64=1,00420000ffbcd5a6/10378206_791478980944361_672948458537634199_n_resized.png">
       <img title="Huorra"
             alt="Xysticus cristatus, A Estrada, Galicia, Spain"
-            src="https://lh3.googleusercontent.com/-49LWhpN0s3k/VOiQYP51bDI/AAAAAAAAANQ/Je0mO5u7efI/s630-fcrop64=1,00420000ffbcd5a6/10378206_791478980944361_
+            src="https://lh3.googleusercontent.com/-49LWhpN0s3k/VOiQYP51bDI/AAAAAAAAANQ/Je0mO5u7efI/s630-fcrop64=1,00420000ffbcd5a6/10378206_791478980944361_672948458537634199_n_resized.png">
     </a>
   </div>
 </body>
