@@ -19,48 +19,59 @@
 
     <body>
 
-<audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">             
-</audio>
 <button onclick="document.getElementById('myTune').play()">Play Music</button>
 <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
 <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
 
 <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="ääni.php" method="POST">
     <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
+	<audio id="myTune" name="audioo">
+  		<source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg" name="hjk"> 
+	</audio>
 </form>
 <?php
     
+    
+    
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
-                if(mysqli_connect_errno()) {
-                    die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
-                }
-                $yhteys->set_charset('utf8');
-						$asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
+    if(mysqli_connect_errno()) {
+        die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
+    }
+    $yhteys->set_charset('utf8');
+    
+    
+    
+	
+					$asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
 					if(!empty($_FILES)){
 						$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
 					    $fileName = $_FILES['file']['name'];
-    			        $str = time($_FILES['user_image']['name'], PATHINFO_EXTENSION);
-				        $targetFile = $targetDir. md5(time($_FILES['user_image']['name']) ).$str;
-					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
+    			        $targetFileName = md5(microtime());
+				        
+					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
 					echo "Lataus onnistui\n";
+					 $sql = ("INSERT INTO projekti_äänet (Pitka, Nimi) VALUES('$targetFileName','$fileName');
+                              UPDATE projekti_äänet           
+                              WHERE id = ID;;");
     				} else {
     				    echo "\n";
     				}
 					}
-					if( $_POST['laheta']){
-                        $sql = ("INSERT INTO projekti_äänet (md5) VALUES('$asia');
-                                UPDATE projekti_äänet
-                                SET md5 = '$asia'
-                                WHERE id = ID;");
-
+                     
 	 				if($tulos=$yhteys->multi_query($sql)) {
-                    	echo "Varaus onnistui!";}
+                    	echo " ";}
                     else {
-                        echo "Varaus epäonnistui!" . " " . $sql . " " . $yhteys->error;
+                        echo " " . " " . $sql . " " . $yhteys->error;
                     }
-     $yhteys->close();
-     }
+/*    echo '<pre>';
+    var_export($GLOBALS);
+    
+    echo '</pre>';
+*/				
+    $yhteys->close();
+    
+    
+    
 ?>
     </body>
 
