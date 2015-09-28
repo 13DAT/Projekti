@@ -49,17 +49,6 @@
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 
-<script>
-$('ok').click(function() {
-    
-        position: 'fixed',
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0,
-        zIndex: 999
-});
-</script>
 
 <div class="nav-bar right">
 <ul class="button-group">

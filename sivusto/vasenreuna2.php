@@ -1,9 +1,9 @@
-  <script>
+<script>
   $(function() {
-    $( "#sortable1" ).sortable({
+    $( "#sortable" ).sortable({
       placeholder: "ui-state-highlight"
     });
-    $( "#sortable1" ).disableSelection();
+    $( "#sortable" ).disableSelection();
   });
   </script>
 </head>
@@ -14,7 +14,6 @@
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
         }
         $m->set_charset('utf8');
-
         $sql = "SELECT * FROM projekti_kuvat ORDER BY id";
         # Suoritetaan SQL-kysely
         $rows = array();
@@ -29,35 +28,27 @@
         }
         ?>
 
-<ul id="sortable1">
+<ul id="sortable">
   <?php  
-
           $o=0;
           foreach($rows as $i) {
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-state-default '.$class.'">
-					<a class="th" id="th" role="button" aria-label="Thumbnail" href="">
-					  <img id="kuva" aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
-
-
-
- 					 </a>
-       			 </li>
-                                                    
-
-                ';
+					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
+					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
+						 </a>
+       			 </li> ';
           }
-
         ?>
 
 
+</body>
 
-
-
-
-        
 
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
 </script>
+
+
+</html>

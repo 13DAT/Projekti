@@ -1,10 +1,10 @@
-       <script>
+<script>
             $(function() {
               $( "#boxi" ).disableSelection();
             });
         </script>
 
-    </head>
+</head>
 
     <body>
 <!-- dropzone laatikot  -->
