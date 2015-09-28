@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -47,10 +48,26 @@
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
+
+<script>
+$('ok').click(function() {
+    
+        position: 'fixed',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        zIndex: 999
+});
+</script>
+
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa tiedosto</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Erkan koodinpätkä</a></li>
+<li><button id="ok" class="button radius">Koko näyttö</a></li>
+ 
+
+
 </ul>
 </div>
 </div>
@@ -83,7 +100,7 @@
 </ul>
 <div class="row">
 <div class="small-6 columns">
-<?php include("footer.php"); ?>
+<footer>heps</footer>
 </div>
 </div>
 

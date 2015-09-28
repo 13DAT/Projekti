@@ -10,7 +10,7 @@
     <body>
 <!-- dropzone laatikot  -->
 <ul id="sortable">
-  <li class="ui-state-default">
+  <li class="ui-priority-primary">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
       </form>
   </li>
