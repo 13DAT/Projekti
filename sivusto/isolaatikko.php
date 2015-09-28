@@ -1,7 +1,6 @@
-        <script>
+       <script>
             $(function() {
-              $( "#sortable" ).sortable();
-              $( "#sortable" ).disableSelection();
+              $( "#boxi" ).disableSelection();
             });
         </script>
 
@@ -9,8 +8,8 @@
 
     <body>
 <!-- dropzone laatikot  -->
-<ul id="sortable">
-  <li class="ui-state-default">
+<ul id="boxi">
+  <li class="ui-priority-primary">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
       </form>
   </li>
