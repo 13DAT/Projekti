@@ -27,7 +27,7 @@
         }
         $m->set_charset('utf8');
 
-        $sql = "SELECT * FROM projekti_kuvat ORDER BY id";
+        $sql = "SELECT * FROM projekti_kuvat ORDER BY ID";
         # Suoritetaan SQL-kysely
         $rows = array();
         if($tulos = $m->query($sql) ) {
@@ -50,7 +50,7 @@
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/kuvat/$t->koodinimi " alt="'.$i[1].'" "/>
+					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/kuvat/'.$i[1].' "/>
 						 </a>
        			 </li> ';
           }
