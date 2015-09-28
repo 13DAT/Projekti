@@ -26,26 +26,26 @@
 
                     
                     if(!empty($_FILES)){
-                        $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/äänet/";
+                        $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
-                        $targetFileName = md5(microtime());
+                        $targetFileName = md5(microtime()).'.jpg';
 
                         if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
-                            $sql = ("INSERT INTO projekti_kuvat (md5_nimi, nimi) VALUES('$targetFileName','$fileName');
+                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi) VALUES('$targetFileName','$fileName');
                               UPDATE projekti_kuvat           
                               WHERE id = ID;;");
                         } else {
-                            echo "virhe 2";
+                            echo " ";
                         }
                     } else {
-                        echo "virhe1";
+                        echo " ";
                     }
 
                     if($tulos=$yhteys->multi_query($sql)) {
                         echo " ";}
                     else {
-                        echo " " . " " . $sql . " " . $yhteys->error;
+                        echo " ";
                     }
    # echo '<pre>';
     #var_export($GLOBALS);

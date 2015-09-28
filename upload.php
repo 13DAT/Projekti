@@ -32,7 +32,7 @@
 
                         if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
-                            $sql = ("INSERT INTO projekti_kuvat (md5_nimi, nimi) VALUES('$targetFileName','$fileName');
+                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi) VALUES('$targetFileName','$fileName');
                               UPDATE projekti_kuvat           
                               WHERE id = ID;;");
                         } else {
