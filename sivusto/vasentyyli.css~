@@ -1,4 +1,4 @@
-#sortable { list-style-type: none; margin: 0; padding: 0; width: 17.188em; border: 3px solid rgba(0, 0, 0, 0.3); }
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 15.188em; border: 3px solid rgba(0, 0, 0, 0.3); }
 #sortable li { padding: 5px; }
 
 
