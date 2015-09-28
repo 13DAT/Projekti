@@ -50,7 +50,7 @@
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/kuvat/'.$i[1].' "/>
+					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
 						 </a>
        			 </li> ';
           }
