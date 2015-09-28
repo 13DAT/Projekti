@@ -87,7 +87,7 @@
 </ul>
 <div class="row">
 <div class="small-6 columns">
-<footer>heps</footer>
+<p>&copy; Copyright Loco</p>
 </div>
 </div>
 
@@ -111,6 +111,6 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-
+<script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
 </body>
 </html>

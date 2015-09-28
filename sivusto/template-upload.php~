@@ -55,7 +55,7 @@
 </form>
 <?php
 if(!empty($_FILES)){
-$targetDir = "/home/jannenyman/public_html/testi/proto/kuvat/";
+$targetDir = "/home/anttitaipale/public_html/projekti/proto/kuvat/";
     $fileName = $_FILES['file']['name'];
         $targetFile = $targetDir.$fileName;
                 if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){

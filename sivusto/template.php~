@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -74,10 +75,7 @@
 </div>
 
 <div class="small-2 small-pull-10 columns">
-<p>kuva</p>
-<p>kuva</p>
-<p>kuva</p>
-<p>kuva</p>
+<?php include("vasenreuna2.php");?>
 </div>
 </div>
 
