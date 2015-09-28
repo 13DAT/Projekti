@@ -1,12 +1,12 @@
 
   #sortable { list-style-type: none; margin: 0; padding: 0; width: 14.4em; }
-  #kaa{width:100px; height:100px;}
-  #kab{width:100px; height:100px;}
-  #kac{width:100px; height:100px;}
-  #kad{width:100px; height:100px;}
+  #daa{width:100px; height:100px;}
+  #dab{width:100px; height:100px;}
+  #dac{width:100px; height:100px;}
+  #dad{width:100px; height:100px;}
  
   #sortable li { width: 14.4em; margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-  html>body #sortable li { height: 7em; widht: 14.7em; line-height: 1.2em; width: 14.4em; }
+  #sortable li { height: 7em; widht: 14.7em; line-height: 1.2em; width: 14.4em; }
    .ui-state-highlight { height: 1.5em; line-height: 1.2em; width: 14.4em; height: 7em;}
  
             img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 14.4em; height: 7em;}
