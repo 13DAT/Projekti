@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
   <link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
-
-
-  <script>
+ 
+   <script>
   $(function() {
     $( "#sortable" ).sortable({
       placeholder: "ui-state-highlight"
@@ -35,7 +34,7 @@
         # tulostetaan tiedot while()-silmukassa
         while( $t = $tulos->fetch_object() ) {
         # lisätään $rows-taulukkoon karuselli-tietokannan rivin tiedot  
-        $rows[]=array($t->id,$t->md5,$t->nimi,$t->url,);
+        $rows[]=array($t->ID,$t->koodinimi,$t->nimi,);
         }
         } else {
         echo "Virhe";
@@ -44,14 +43,14 @@
 
 <ul id="sortable">
   <?php  
-
+  
           $o=0;
           foreach($rows as $i) {
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
+					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/kuvat/$t->koodinimi " alt="'.$i[1].'" "/>
 						 </a>
        			 </li> ';
           }
