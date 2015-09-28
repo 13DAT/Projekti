@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="page-wrap">
+
 <div class="row">
 <div class="small-12 columns">
 <header>
@@ -75,10 +75,12 @@ echo "File is valid, and was successfully uploaded.\n";
 </div>
 </div>
 </ul>
-</div>
+
 <div class="row">
 <div class="small-6">
-<?php include("footer.php"); ?>
+
+    <p>&copy; Copyright Loco</p>
+
 </div>
 </div>
 
