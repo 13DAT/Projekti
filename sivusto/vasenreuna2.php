@@ -1,7 +1,7 @@
 <script>
   $(function() {
     $( "#sortable" ).sortable({
-      placeholder: "ui-state-highlight"
+      placeholder: "ui-state-primary"
     });
     $( "#sortable" ).disableSelection();
   });
@@ -28,7 +28,7 @@
         }
         ?>
 
-<script type="text/javascript"></script>
+
 <ul id="sortable">
   <?php  
           $o=0;
@@ -37,7 +37,7 @@
             else $class="";
             echo '<li class="ui-state-primary '.$class.'">
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-					  <img aria-hidden=true style="width:15.625em; height:6.250em;" src="'.$i[1].'" alt="'.$i[1].'">
+					  <img aria-hidden=true style="width:13.625em; height:6.250em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].'">
 						 </a>
        			 </li> ';
           }
@@ -46,5 +46,7 @@
 
 </body>
 
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script type="text/javascript"></script>
 
 </html>

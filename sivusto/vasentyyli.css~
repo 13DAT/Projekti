@@ -1,10 +1,7 @@
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 17.188em; border: 3px solid rgba(0, 0, 0, 0.3); }
+#sortable li { padding: 5px; }
 
-  #sortable { list-style-type: none; margin: 0; padding: 0; width: 14.4em; }
-  
 
-  #sortable li { width: 14.4em; margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
-  #sortable li { height: 7em; widht: 14.7em; line-height: 1.2em; width: 14.4em; }
-   .ui-state-highlight { height: 1.5em; line-height: 1.2em; width: 14.4em; height: 7em;}
 
 
 
