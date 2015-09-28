@@ -46,11 +46,11 @@
 					if(!empty($_FILES)){
 						$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
 					    $fileName = $_FILES['file']['name'];
-    			        $str = time($_FILES['user_image']['name'], PATHINFO_EXTENSION);
-				        $targetFile = $targetDir. md5(time($_FILES['user_image']['name']) ).$str;
-					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
+    			        $targetFileName = md5(microtime());
+				        
+					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
 					echo "Lataus onnistui\n";
-					 $sql = ("INSERT INTO projekti_äänet (Pitka) VALUES('$asia');
+					 $sql = ("INSERT INTO projekti_äänet (Pitka, Nimi) VALUES('$targetFileName','$fileName');
                               UPDATE projekti_äänet           
                               WHERE id = ID;;");
     				} else {
@@ -59,18 +59,19 @@
 					}
                      
 	 				if($tulos=$yhteys->multi_query($sql)) {
-                    	echo "Varaus onnistui!";}
+                    	echo " ";}
                     else {
-                        echo "Varaus epäonnistui!" . " " . $sql . " " . $yhteys->error;
+                        echo " " . " " . $sql . " " . $yhteys->error;
                     }
-
-				
+/*    echo '<pre>';
+    var_export($GLOBALS);
+    
+    echo '</pre>';
+*/				
     $yhteys->close();
     
     
-    echo '<pre>';
-    print_r($GLOBALS);
-    echo '</pre>';
+    
 ?>
     </body>
 
