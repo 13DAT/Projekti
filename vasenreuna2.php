@@ -8,10 +8,9 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
-
-
-  <script>
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
+ 
+   <script>
   $(function() {
     $( "#sortable" ).sortable({
       placeholder: "ui-state-highlight"
@@ -50,30 +49,22 @@
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
-					<a class="th" id="th" role="button" aria-label="Thumbnail" href="">
+					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
 					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
-
-
-
- 					 </a>
-       			 </li>
-                                                    
-
-                ';
+						 </a>
+       			 </li> ';
           }
 
         ?>
 
 
+</body>
 
-
-
-
-        
 
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
+
 </script>
-</body>
+
 
 </html>
