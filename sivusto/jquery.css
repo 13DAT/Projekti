@@ -949,7 +949,6 @@ body .ui-tooltip {
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary {
 	font-weight: bold;
-	border: 3px solid #d3d3d3;
 }
 .ui-priority-secondary,
 .ui-widget-content .ui-priority-secondary,
