@@ -141,6 +141,33 @@ tavoite1.php
 vasenreuna2.php
 vasenreuna2.php
 
+<<<<<<< HEAD
+*** These modified files were found in JOE when it aborted on Wed Sep 23 13:54:14 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File '(Unnamed)'
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna3.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+=======
 *** These modified files were found in JOE when it aborted on Fri Sep 25 09:43:53 2015
 *** JOE was aborted by UNIX signal 1
 
@@ -333,3 +360,4 @@ template.php
 template.php
 template.php
 upload.php
+>>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5

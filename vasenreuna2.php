@@ -49,22 +49,75 @@
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
+<<<<<<< HEAD
+					<a class="th" id="th" role="button" aria-label="Thumbnail" href="">
+					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
+					  </a>
+       			 </li>';
+=======
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
 					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
 						 </a>
        			 </li> ';
+>>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5
           }
 
         ?>
+        
+     <ul id="sortable">
+  <li class="ui-state-default">
+      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kad">
+      </form>
+  </li>
+</ul>
+        
+        
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script type="text/javascript">
+
+Dropzone.options.kab = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+     Dropzone.options.kab = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+</script>
 
 
 </body>
 
 
+<<<<<<< HEAD
+
+
+
+</body>
+=======
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
 
 </script>
 
+>>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5
 
 </html>
