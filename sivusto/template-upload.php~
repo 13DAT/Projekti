@@ -17,11 +17,6 @@
 </head>
 <body>
 
-<div class="wrapper">   
-<div class="push"></div>
-</div>
-
-
 <div class="row">
 <div class="small-12 columns">
 <header>
@@ -52,6 +47,7 @@
 <hr>
 </div>
 </div>
+
 <div class="row">
 <div class="small-12 columns">
 <center>
