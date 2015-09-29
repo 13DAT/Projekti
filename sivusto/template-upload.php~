@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="kuva.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/footer.css">
 </head>
 <body>
 
@@ -113,7 +114,7 @@
 
 <div class="row">
 <div class="small-6">
-<?php include("footer.php")?>
+
 
 </div>
 </div>
@@ -139,7 +140,15 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
+</div>
+</div>
+<div class="wrapper">
 
+<div class="push"></div>
+</div>
+<div class="footer">
+  <p>copyright ES</p>
+  </div>
 </body>
 <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
 </html>
