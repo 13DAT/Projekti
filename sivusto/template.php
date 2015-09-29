@@ -70,6 +70,12 @@
 </div>
 
 <div class="row">
+<div class="small-12 columns">
+<h2>Kuvat</h2>
+</div>
+</div>
+
+<div class="row">
 <div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
