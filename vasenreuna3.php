@@ -52,57 +52,28 @@
             echo '<li class="ui-stste-default '.$class.'">
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="">
 					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
-					  </a>
-       			 </li>';
+
+
+
+ 					 </a>
+       			 </li>
+                                                    
+
+                ';
           }
 
         ?>
+
+
+
+
+
+
         
-     <ul id="sortable">
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kad">
-      </form>
-  </li>
-</ul>
-        
-        
+
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
-
-Dropzone.options.kab = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
-     Dropzone.options.kab = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
 </script>
-
-
-
-
-
-
-
 </body>
 
 </html>
