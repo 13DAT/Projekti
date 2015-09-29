@@ -172,7 +172,7 @@
   box-sizing: border-box; }
 
 .dropzone {
-  min-height: 100px;
+  min-height: 700px;
   border: 0px solid rgba(0, 0, 0, 0.3);
   background: transparent; }
 	padding: 20px 20px; }

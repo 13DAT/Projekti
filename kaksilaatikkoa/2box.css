@@ -3,3 +3,6 @@
 img.displayed{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 1440px; max-height: 700px;}
 div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{margin:-20; width: 1440px; height: 700px;}
 img{margin:-20px; margin-left:-60px; max-height: 700px;}
+user-drag: none;
+-moz-user-select: none;
+-webkit-user-drag: none;

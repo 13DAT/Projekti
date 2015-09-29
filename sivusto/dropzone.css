@@ -202,6 +202,8 @@
     .dropzone .dz-preview.dz-file-preview .dz-image {
       border-radius: 0px;
       background: #999;
+
+
       background: linear-gradient(to bottom, #eee, #ddd); }
     .dropzone .dz-preview.dz-file-preview .dz-details {
       opacity: 1; }
