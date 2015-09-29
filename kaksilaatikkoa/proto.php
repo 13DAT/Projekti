@@ -28,6 +28,10 @@
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
       </form>
   </li>
+  <li class="ui-state-default">
+      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
+      </form>
+  </li>
 </ul>
     </body>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
