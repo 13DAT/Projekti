@@ -137,7 +137,7 @@ nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
       addRemoveLinks: false,
       previewsContainer: null,
       capture: null,
-      dictDefaultMessage: "Valitse kuvat sivupalkista",
+      dictDefaultMessage: "Valitse kuva sivupalkista",
       dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
       dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
       dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",

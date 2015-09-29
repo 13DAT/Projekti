@@ -111,6 +111,6 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 </body>
 </html>

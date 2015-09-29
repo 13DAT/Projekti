@@ -1,16 +1,22 @@
-       <script>
+<script>
             $(function() {
               $( "#boxi" ).disableSelection();
             });
-        </script>
+</script>
 
-    </head>
+</head>
 
     <body>
 <!-- dropzone laatikot  -->
-<div id="laatikko">
+<div id="laatikko1">
   <div class="ui-priority-primary">
       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
+      </form>
+  </div>
+</div>
+<div id="laatikko2">
+  <div class="ui-priority-primary">
+      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
       </form>
   </div>
 </div>
@@ -19,6 +25,19 @@
      <script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
      <script type="text/javascript">
     Dropzone.options.kaa = {
+        accept: function(file, done) {
+            console.log("uploaded");
+            done();
+        },
+        init:function() {
+            this.on("addedfile", function(){
+                if (this.files[1]!=null){
+                    this.removeFile(this.files[0]);
+                }
+            });
+        }
+    };
+    Dropzone.options.kab = {
         accept: function(file, done) {
             console.log("uploaded");
             done();
