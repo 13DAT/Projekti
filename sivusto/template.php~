@@ -27,7 +27,7 @@
 <div class="row">
 <div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
 </header>
 </div>
 </div>
@@ -66,6 +66,12 @@
 <div class="row">
 <div class="small-12 columns">
 <hr>                          
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 columns">
+<div id="laatikko"></div>
 </div>
 </div>
 
