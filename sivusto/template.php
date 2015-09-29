@@ -53,8 +53,8 @@
 
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa tiedosto</a></li>
-<li><button id="ok" class="button radius">Koko näyttö</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa tiedosto</a></li>
+<li><button id="ok" class="button radius success">Koko näyttö</a></li>
  
 
 
@@ -71,7 +71,7 @@
 
 <div class="row">
 <div class="small-12 columns">
-<h2>Kuvat</h2>
+<?php include("poisto.php");?>
 </div>
 </div>
 
