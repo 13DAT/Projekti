@@ -27,7 +27,7 @@
 <div class="row">
 <div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
 </header>
 </div>
 </div>
@@ -87,7 +87,7 @@
 </ul>
 <div class="row">
 <div class="small-6 columns">
-<p>&copy; Copyright Loco</p>
+<?php include("footer.php")?> 
 </div>
 </div>
 

@@ -87,7 +87,7 @@
 </ul>
 <div class="row">
 <div class="small-6 columns">
-<p>&copy; Copyright Loco</p>
+<?php include("footer.php")?> 
 </div>
 </div>
 

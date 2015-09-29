@@ -1,5 +1,9 @@
-<!-- FOOTER -->
+<div class="wrapper">
+<div class="push"></div>
+</div>
 
-<footer class="site-footer">
-    &copy; Copyright Loco
-  </footer>
+<div class="footer">
+  <p>copyright ES</p>
+  </div>
+
+</html>
