@@ -4,9 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+    <link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/footer.css">
     <meta charset="UTF-8">
 </head>
 <body><center>
+    
     <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="upload.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
@@ -59,6 +61,12 @@
 ?>
 
 </center>
+<div class="wrapper">
+<div class="push"></div>
+</div>
+<div class="footer">
+  <p>copyright ES</p>
+  </div>
 
 </body>
 <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
