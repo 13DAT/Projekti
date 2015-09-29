@@ -12,11 +12,10 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer-style.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 </head>
 <body>
-
 
 <div class="row">
 <div class="small-12 columns">
@@ -48,6 +47,7 @@
 <hr>
 </div>
 </div>
+
 <div class="row">
 <div class="small-12 columns">
 <center>
@@ -113,8 +113,7 @@
 
 <div class="row">
 <div class="small-6">
-
-    <p>&copy; Copyright Loco</p>
+<?php include("footer.php")?>
 
 </div>
 </div>

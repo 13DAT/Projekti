@@ -300,7 +300,7 @@ button.ui-button::-moz-focus-inner {
 	text-decoration: none;
 }
 .ui-datepicker .ui-datepicker-buttonpane {
-	background-image: none;
+	
 	margin: .7em 0 0 0;
 	padding: 0 .2em;
 	border-left: 0;
@@ -420,13 +420,12 @@ button.ui-button::-moz-focus-inner {
 	position: relative;
 	border: 0;
 	padding: .5em 1em;
-	background: none;
+	
 	overflow: auto;
 }
 .ui-dialog .ui-dialog-buttonpane {
 	text-align: left;
 	border-width: 1px 0 0 0;
-	background-image: none;
 	margin-top: .5em;
 	padding: .3em 1em .5em .4em;
 }
@@ -949,7 +948,6 @@ body .ui-tooltip {
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary {
 	font-weight: bold;
-	border: 0px solid #d3d3d3;
 }
 .ui-priority-secondary,
 .ui-widget-content .ui-priority-secondary,

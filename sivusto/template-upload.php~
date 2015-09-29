@@ -12,10 +12,14 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer-style.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 </head>
 <body>
+
+<div class="wrapper">   
+<div class="push"></div>
+</div>
 
 
 <div class="row">
@@ -52,7 +56,7 @@
 <div class="small-12 columns">
 <center>
 
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="upload.php" method="POST">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-upload.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
 
@@ -75,7 +79,7 @@
 
                         if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
-                            $sql = ("INSERT INTO projekti_kuvat (md5_nimi, nimi) VALUES('$targetFileName','$fileName');
+                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi) VALUES('$targetFileName','$fileName');
                               UPDATE projekti_kuvat           
                               WHERE id = ID;;");
                         } else {
@@ -113,8 +117,7 @@
 
 <div class="row">
 <div class="small-6">
-
-    <p>&copy; Copyright Loco</p>
+<?php include("footer.php")?>
 
 </div>
 </div>
