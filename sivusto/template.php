@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<div id="heps">
+
 <div class="row">
 <div class="small-12 columns">
 <header>
@@ -32,7 +32,8 @@
 </header>
 </div>
 </div>
-</div>
+
+
 <div class="row">
 <div class="small-12 columns">
 <hr>

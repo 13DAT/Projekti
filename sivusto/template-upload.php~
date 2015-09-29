@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
@@ -10,7 +9,9 @@
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" type="text/css" href="kuva.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -53,11 +54,17 @@
 <div class="small-12 columns">
 <center>
 
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-upload.php" method="POST">
+<div id="laatikko">
+  <div class="ui-priority-primary">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone dz-clickable displayed" action="template-upload.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
-
+</div>
+</div>
 <?php
+
+
+
 
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
@@ -101,7 +108,8 @@
 
 
 ?>
-        
+
+          
 </div>
 </div>
 </center>
@@ -150,5 +158,7 @@
   <p>copyright ES</p>
   </div>
 </body>
-<script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
+
+<script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.js"></script>
+
 </html>

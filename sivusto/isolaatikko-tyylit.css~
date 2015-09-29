@@ -1,2 +1,1 @@
-#laatikko1 { margin: 0; padding-right: 5 px; float: left; width: 720px; font-size: 3em;}
-#laatikko2 { margin: 0; padding: 0; float: right; width: 720px; font-size: 3em;}
+#laatikko { margin: 0; padding: 0; float: right; width: 1440px; font-size: 3em;}

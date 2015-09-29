@@ -5,7 +5,7 @@ function confirm_alert(node) {
 </script>
 
 
-<form action="template.php" method="POST">
+<form action="template.php" method="GET">
       <button name="submit" class="button alert" value="TRUE" onclick="return confirm_alert(this);">Poista kaikki kuvat</button>
   </form>
 </div>
@@ -17,7 +17,7 @@ function confirm_alert(node) {
         die ("mysql, virhe yhteyden luonnissa: " . mysqli_connect_error());
       }
       $my->set_charset('utf8');
-      $submit =$my->real_escape_string(trim(htmlentities(strip_tags($_POST['submit']))));
+      $submit =$my->real_escape_string(trim(htmlentities(strip_tags($_GET['submit']))));
 
 	if($submit){
         $sql = "DELETE FROM `data14`.`projekti_kuvat`;";                                 

@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<div id="heps">
+
 <div class="row">
 <div class="small-12 columns">
 <header>
@@ -75,14 +75,6 @@
 <?php include("poisto.php");?>
 </div>
 </div>
-
-
-<div class="row">
-<div class="small-12 columns">
-<?php include("ääni-button.php");?>
-</div>
-</div>
-
 
 
 <div class="row">
