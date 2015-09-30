@@ -44,19 +44,17 @@
 <div class="row">
 <div class="small-12 columns">
 <div class="nav-bar left">
-<audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
-  </audio>
-    <button onclick="document.getElementById('myTune');">Valitse musiikkia</button>
+  <a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-äänet.php" class="button radius success">Valitse musiikkia</a></li>
   <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 
+<?php include("ääni_tuo.php");?>
 
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa tiedosto</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
 <li><button id="ok" class="button radius success">Koko näyttö</a></li>
  
 

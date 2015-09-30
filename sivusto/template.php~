@@ -44,15 +44,13 @@
 <div class="row">
 <div class="small-12 columns">
 <div class="nav-bar left">
-<audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
-  </audio>
-    <button onclick="document.getElementById('myTune');">Valitse musiikkia</button>
+  <a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-äänet.php" class="button radius success">Valitse musiikkia</a></li>
   <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 
+<?php include("ääni_tuo.php");?>
 
 <div class="nav-bar right">
 <ul class="button-group">
@@ -96,6 +94,17 @@
 </div>
 </ul>
 
+
+<div class="row">
+<div class="small-12 columns">
+<div id="clearfooter"></div>
+<div class="footer">
+<p>&copy; 2015 13DAT</p>
+</div>
+</div>
+</div>
+</ul>
+
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
@@ -116,10 +125,6 @@
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
 
-<div id="clearfooter"></div>
-  <div class="footer">
-      <p>&copy; 2015 13Dat &middot; <a href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/Kuvat2/">Cosmo</a></p>
-        </div>
 
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 </body>
