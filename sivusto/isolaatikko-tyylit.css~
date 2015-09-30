@@ -1,4 +1,1 @@
-#sortable { list-style-type: none; margin: 0; padding: 0; width: 1440px; height:700px; float: right;}
-#sortable li { margin: 3px 3px 3px 0; float:left; width: 1440px; height: 700px; font-size: 3em; background:#E8E8E8;}
-div.dz-image.dz-processing.dz-image-preview.dz-error.dz-complete{width: 1440px; height: 700px;}
-img{display: block; margin-left: 0; margin-right: 0; margin: 0; width: 1440px; max-height: 700px;}
+#laatikko { margin: 0; padding: 0; float: right; width: 1440px; font-size: 3em;}

@@ -32,18 +32,12 @@
             });
         }
     };
-     Dropzone.options.kab = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
 
 </script>
+<ul id="sortable">
+  <li class="ui-state-primary active">
+    <a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php"> 
+     <img aria-hidden=true style="width:13.625em; height:6.250em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti
+     </a>
+  </li>
+</ul>

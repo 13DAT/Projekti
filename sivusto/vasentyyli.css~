@@ -1,7 +1,8 @@
+#laatikko { width: 300px; height: 200px; padding-bottom: 5 px; background: transparent; float:left; }
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 15.188em; min-height:700px; border: 3px solid rgba(0, 0, 0, 0.3); background: #FFFFFF; }
+#sortable li { padding: 5px; }
 
-  #sortable1 { list-style-type: none; margin: 0; padding: 0; width: 14.4em; }
-  #daa{width:100px; height:100px;}
-  #dab{width:100px; height:100px;}
-  #dac{width:100px; height:100px;}
-  #dad{width:100px; height:100px;}
- 
+
+
+
+

@@ -1,4 +1,4 @@
-/*
+/*.
 nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
 
  *
@@ -137,7 +137,7 @@ nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
       addRemoveLinks: false,
       previewsContainer: null,
       capture: null,
-      dictDefaultMessage: "Drop files here to upload",
+      dictDefaultMessage: "Vedä kuva laatikkoon tai selaa",
       dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
       dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
       dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
@@ -161,7 +161,7 @@ nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
         _ref = this.element.getElementsByTagName("div");
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           child = _ref[_i];
-          if (/(^| )dz-message($| )/.test(child.className)) { 
+          if (/(^| )dz-message($| )/.test(child.className)) {
             messageElement = child;
             child.className = "dz-message";
             continue;

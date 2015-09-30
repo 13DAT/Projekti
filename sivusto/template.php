@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -21,15 +25,16 @@
 </head>
 <body>
 
-<div id="heps">
+
 <div class="row">
 <div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
 </header>
 </div>
 </div>
-</div>
+
+
 <div class="row">
 <div class="small-12 columns">
 <hr>
@@ -47,10 +52,15 @@
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
+
+
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius">Lataa tiedosto</a></li>
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.php" class="button radius">Erkan koodinpätkä</a></li>
+<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa tiedosto</a></li>
+<li><button id="ok" class="button radius success">Koko näyttö</a></li>
+ 
+
+
 </ul>
 </div>
 </div>
@@ -63,15 +73,19 @@
 </div>
 
 <div class="row">
+<div class="small-12 columns">
+<?php include("poisto.php");?>
+</div>
+</div>
+
+
+<div class="row">
 <div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
 
 <div class="small-2 small-pull-10 columns">
-<p>kuva</p>
-<p>kuva</p>
-<p>kuva</p>
-<p>kuva</p>
+<?php include("vasenreuna2.php");?>
 </div>
 </div>
 
@@ -81,12 +95,17 @@
 </div>
 </div>
 </ul>
-<div class="row">
-<div class="small-6 columns">
-<?php include("footer.php"); ?>
-</div>
-</div>
 
+
+<div class="row">
+<div class="small-12 columns">
+<div id="clearfooter"></div>
+<div class="footer">
+<p>&copy; 2015 13DAT</p>
+</div>
+</div>
+</div>
+</ul>
 
 <script>
   document.write('<script src=js/vendor/' +
@@ -108,5 +127,7 @@
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
 
+
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 </body>
 </html>

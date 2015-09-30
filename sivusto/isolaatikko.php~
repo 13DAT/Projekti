@@ -1,20 +1,36 @@
-        <script>
+<script>
             $(function() {
-              $( "#sortable" ).sortable();
-              $( "#sortable" ).disableSelection();
+              $( "#boxi" ).disableSelection();
             });
-        </script>
+</script>
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("demo").innerHTML = "Started to drag the p element";
+}
 
-    </head>
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
+
+</head>
 
     <body>
 <!-- dropzone laatikot  -->
-<ul id="sortable">
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
+<div id="laatikko">
+  <div class="ui-priority-primary">
+      <div class="dropzone dz-clickable displayed" ondrop="drop(event)" ondragover="allowDrop(event)" id="kaa"></div>
       </form>
-  </li>
-</ul>
+  </div>
+</div>
     </body>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
      <script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
@@ -32,7 +48,7 @@
             });
         }
     };
-     Dropzone.options.kab = {
+    Dropzone.options.kab = {
         accept: function(file, done) {
             console.log("uploaded");
             done();
@@ -45,5 +61,6 @@
             });
         }
     };
+     
 
 </script>
