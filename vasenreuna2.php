@@ -26,7 +26,6 @@
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
         }
         $m->set_charset('utf8');
-
         $sql = "SELECT * FROM projekti_kuvat ORDER BY ID";
         # Suoritetaan SQL-kysely
         $rows = array();
@@ -49,19 +48,15 @@
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-stste-default '.$class.'">
-<<<<<<< HEAD
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="">
-					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
+					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[0].'" "/>
 					  </a>
-       			 </li>';
-=======
+       			 </li>;
 					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-					  <img aria-hidden=true src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
+					  <img aria-hidden=true src="kuvat/'.$i[1].' "/>
 						 </a>
        			 </li> ';
->>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5
           }
-
         ?>
         
      <ul id="sortable">
@@ -74,7 +69,6 @@
         
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
-
 Dropzone.options.kab = {
         accept: function(file, done) {
             console.log("uploaded");
@@ -102,22 +96,12 @@ Dropzone.options.kab = {
         }
     };
 </script>
-
+</body>
 
 </body>
 
-
-<<<<<<< HEAD
-
-
-
-</body>
-=======
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
-
 </script>
-
->>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5
 
 </html>
