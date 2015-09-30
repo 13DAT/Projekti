@@ -79,7 +79,7 @@
 
 <div class="row">
 <div class="small-10 small-push-2 columns">
-<?php include("isolaatikko.php");?>
+<?php include("template-isolaatikko.php");?>
 </div>
 
 <div class="small-2 small-pull-10 columns">
