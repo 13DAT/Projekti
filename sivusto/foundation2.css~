@@ -55,7 +55,7 @@ body {
   font-size: 100%; }
 
 body {
-  background-image: url("taustakuva.jpg");
+  background-image: url("taustakuva1.jpg");
   color: #222;
   padding: 0;
   margin: 0;

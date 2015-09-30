@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -94,12 +95,17 @@
 </div>
 </div>
 </ul>
-<div class="row">
-<div class="small-6 columns">
-<?php include("footer.php")?> 
-</div>
-</div>
 
+
+<div class="row">
+<div class="small-12 columns">
+<div id="clearfooter"></div>
+<div class="footer">
+<p>&copy; 2015 13DAT</p>
+</div>
+</div>
+</div>
+</ul>
 
 <script>
   document.write('<script src=js/vendor/' +
@@ -120,6 +126,8 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
+
+
 <script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
 </body>
 </html>

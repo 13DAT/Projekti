@@ -6,6 +6,23 @@
     $( "#sortable" ).disableSelection();
   });
   </script>
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("demo").innerHTML = "Started to drag the p element";
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
 </head>
 <body>
  <?php
@@ -38,8 +55,10 @@
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-state-primary '.$class.'">
-                    <a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
+                    <a class="th" id="th" role="button" aria-label="Thumbnail">
+                      <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" ondragstart="dragStart(event)" draggable="true" id="dragtarget" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
+                         </div>
                          </a>
                  </li> ';
           }
@@ -56,4 +75,3 @@
 </script>
 
 
-</html>

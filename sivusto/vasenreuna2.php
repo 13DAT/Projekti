@@ -6,6 +6,7 @@
     $( "#sortable" ).disableSelection();
   });
   </script>
+
 </head>
 <body>
  <?php
@@ -38,8 +39,8 @@
             if(($o++)==0) $class="active";
             else $class="";
             echo '<li class="ui-state-primary '.$class.'">
-                    <a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
-                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'.$i[1].' "/>
+                      <a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
+                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/0cb89e525e0b5892d991b389000c5ada.jpg "/>
                          </a>
                  </li> ';
           }

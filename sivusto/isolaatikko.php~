@@ -3,20 +3,31 @@
               $( "#boxi" ).disableSelection();
             });
 </script>
+<script>
+function dragStart(event) {
+    event.dataTransfer.setData("Text", event.target.id);
+    document.getElementById("demo").innerHTML = "Started to drag the p element";
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
 
 </head>
 
     <body>
 <!-- dropzone laatikot  -->
-<div id="laatikko1">
+<div id="laatikko">
   <div class="ui-priority-primary">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
-      </form>
-  </div>
-</div>
-<div id="laatikko2">
-  <div class="ui-priority-primary">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kab">
+      <div class="dropzone dz-clickable displayed" ondrop="drop(event)" ondragover="allowDrop(event)" id="kaa"></div>
       </form>
   </div>
 </div>
