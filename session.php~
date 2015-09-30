@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation/css/foundation.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/icons/foundation-icons/foundation-icons.css">
+<script src="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
+<script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
+
+
+<style>
+div {
+  display: inline-block;
+}
+img {
+    width: 720px;
+    height: 700px;
+    margin-left: -0.27em;
+    }
+
+</style>
+</head>
+<body>
+<button onclick="document.getElementById('myTune').play()">Play Music</button>
+<button onclick="document.getElementById('myTune').pause()">Pause Music</button>
+<button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+<?php
+        $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
+        if(mysqli_connect_errno()) {
+          die("MySQL, virhe yhteyden luonnissa: ".mysqli_connect_error());
+        }
+        $yhteys->set_charset('utf8');
+        $tulos = mysqli_query($yhteys, "SELECT Pitka FROM projekti_äänet
+                                        WHERE ID = 7;");
+        $rivi = mysqli_fetch_object($tulos);
+        mysqli_close($yhteys);
+        print_r($rivi);
+		
+		 session_start();
+         $_SESSION['Pitka'] = $rivi->Pitka;
+		'<br /><a href="session.php"> </a>';
+       	'<br /><a href="session.php?' . SID . '"> </a>';
+
+        $rivi = mysqli_fetch_array($tulos);
+        echo "<tr>
+				  </td>
+                  <td>"; echo $rivi->Pitka ;echo "</td> 
+                  <td><a href=\"session.php?id=";echo $SESSION['ID'] ;echo "\" class='small secondary button'>Näytä kuvaus</a><td>
+             
+			<audio id='myTune' name='audioo'>                    
+				<source src='http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/%C3%A4%C3%A4net/";echo $rivi->Pitka ;echo ";>
+			</audio>
+</tr>"
+?>		
+
+</body>
+</html>
