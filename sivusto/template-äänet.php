@@ -8,13 +8,13 @@
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone3.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit3.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone3.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit3.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-<script src="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
+<script src="/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
@@ -44,7 +44,7 @@
 <div class="small-12 columns">
 <div class="nav-bar left">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
+<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
 </ul>
 </div>
 
@@ -79,7 +79,7 @@
 
                     $asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
                     if(!empty($_FILES)){
-                        $targetDir = "http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/äänet/";
+                        $targetDir = "/~jonatanlogland/Projekti/Projekti/äänet/";
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime());
 
@@ -130,7 +130,7 @@
             mysqli_close($yhteys);
         ?>
         <audio id='myTune' name='audioo'>
-            <source src="http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
+            <source src="/~jonatanlogland/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
         </audio>
         </table>
         </div>
@@ -185,7 +185,7 @@
 </body>
 
 
- <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
-<link type="css" media="screen" rel="stylesheet" href="~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.css" />
-<script type="javascript" src="~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.js"></script>
+ <script src="/~jannenyman/testi/proto/dropzone.js"></script>
+<link type="css" media="screen" rel="stylesheet" href="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.css" />
+<script type="javascript" src="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.js"></script>
 </html>
