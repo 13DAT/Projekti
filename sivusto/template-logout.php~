@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kolmiulotteinen esitys</title>
+<title>Kirjaudu sisään</title>
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
@@ -24,7 +24,7 @@
 <div class="row">
 <div class="small-12 columns">
 <header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
 </header>
 </div>
 </div>
