@@ -21,11 +21,11 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit3.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-<<<<<<< HEAD
+
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-=======
+
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
->>>>>>> a184fa9919b47e8a1752899b6a6187f2993aa9cc
+
 <script src="/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -92,11 +92,11 @@ if($_SESSION['login'] != 1){
 
                     $asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
                     if(!empty($_FILES)){
-<<<<<<< HEAD
+
                         $targetDir = "/~jonatanlogland/Projekti/Projekti/äänet/";
-=======
+
                         $targetDir = "/~patriksipi/Projekti/Projekti/äänet/";
->>>>>>> a184fa9919b47e8a1752899b6a6187f2993aa9cc
+
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime());
 
@@ -147,11 +147,11 @@ if($_SESSION['login'] != 1){
             mysqli_close($yhteys);
         ?>
         <audio id='myTune' name='audioo'>
-<<<<<<< HEAD
+
             <source src="/~jonatanlogland/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
-=======
+
             <source src="/~patriksipi/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
->>>>>>> a184fa9919b47e8a1752899b6a6187f2993aa9cc
+
         </audio>
         </table>
         </div>
