@@ -1,5 +1,12 @@
+<?php
+// Start the session
+session_start();
+if($_SESSION['login'] != 1){
+  header("Location: template-login.php");
+  }
+?>
 <!DOCTYPE HTML>
-<html lang="fi">
+<html class="no-js" lang="fi" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +14,61 @@
     <title>Ääni</title>
     <link rel="shortcut icon" href="autouusi.png">	
 	<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+    <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit3.css">
+    <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
+    <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
     <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation/css/foundation.css"/>
 	<script src="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/modernizr/modernizr.js"></script>
 	<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/icons/foundation-icons/foundation-icons.css">  
 	</head>
+<body>
+<div class="row">
+<div class="small-12 columns">
+<header>
+<h1 style="text-align:center; font-family:Verdana; font-size:300%">Lataa tiedosto</h1>
+<div class="nav-bar right">
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
+</header>
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 columns">
+<hr>
+</div>
+</div>
 
 
-  <div class="tableresponsive">
-  <body>
+
+<div class="row">
+<div class="small-12 columns">
+<div class="nav-bar left">
+<ul class="button-group">
+<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
+</ul>
+</div>
+
+
+<div class="row">
+<div class="small-12 columns">
+<hr>
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 columns">
+<h2>Valitse ääni listasta</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 columns">
+  <div id="laatikko">
 	<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template_äänet.php" method="POST">  
     	<input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
 	</form>
+	</div>
+		<div class="tableresponsive"> 
         <h1>Ääni</h1> 
         <?php
 	$yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
@@ -52,24 +103,23 @@
                 $tulos = mysqli_query($yhteys, "SELECT DISTINCT * 
                                                 FROM projekti_äänet");
         
-        echo  "<table><thead><tr><th>1</th><th>2</th><th>3</td></tr></thead>";                                    
+        echo  "<table><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";                                    
               
         while($rivi = mysqli_fetch_array($tulos)) {
         
         echo "<tr>
                   <td>".$rivi['Nimi']."</td> 
-                  <td>".$rivi['Pitka']."</td>
                   <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Näytä</a></td>
               </tr>";
 				
 				session_start();
-				    '<br /><a href="hakuc_tuo.php"> </a>';
-				    '<br /><a href="hakuc_tuo.php?' . SID . '"> </a>';
+				    '<br /><a href="template.php"> </a>';
+				    '<br /><a href="template.php?' . SID . '"> </a>';
         			$_SESSION['Nimi'] = $rivi['Nimi'];
         			$_SESSION['Pitka'] = $rivi['Pitka'];
         			$_SESSION['ID'] = $rivi['ID'];
-         		 '<br /><a href="hakuc_tuo.php"> </a>'; 
-        		 '<br /><a href="hakuc_tuo.php?' . SID . '"> </a>'; 
+         		 '<br /><a href="template.php"> </a>'; 
+        		 '<br /><a href="template.php?' . SID . '"> </a>'; 
                 }
             
      
