@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
           $id = $_GET['id'];
 
           $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");

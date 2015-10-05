@@ -48,7 +48,7 @@ $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
 </body>
 
 
-<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script src="/~patriksipi/testi/dropzonee.js"></script>
 <script type="text/javascript">
 
 </script>

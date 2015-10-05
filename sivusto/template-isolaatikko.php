@@ -35,10 +35,10 @@ session_start();
 <div id="laatikko">
   <div class="ui-priority-primary">
     <div class="dropzone dz-clickable displayed" id="kaa">
-    <img src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+    <img src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
     </div>
 
   </div>
 </div>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
-     <script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
+     <script src="/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
