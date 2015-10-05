@@ -24,7 +24,7 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/modernizr/src/Modernizr.js"></script>
+<script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 
 
@@ -36,8 +36,6 @@ if($_SESSION['login'] != 1){
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
-<div class="nav-bar right">
-<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
 </header>
 </div>
 </div>
@@ -87,7 +85,7 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-10 small-push-2 columns">
-<?php include("isolaatikko.php");?>
+<?php include("template-isolaatikko.php");?>
 </div>
 
 <div class="small-2 small-pull-10 columns">
@@ -109,7 +107,7 @@ if($_SESSION['login'] != 1){
 <div class="footer">
 <p>&copy; 2015 13DAT</p>
 </div>
-</div>0
+</div>
 </div>
 </ul>
 
@@ -118,13 +116,13 @@ if($_SESSION['login'] != 1){
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
 <script>
     $(document).foundation();
   </script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script> 
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
 <script>
 
       $(document).foundation();

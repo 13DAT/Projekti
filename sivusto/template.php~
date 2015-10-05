@@ -1,4 +1,10 @@
-
+<?php
+// Start the session
+session_start();
+if($_SESSION['login'] != 1){
+  header("Location: template-login.php");
+  }
+?>
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
@@ -18,7 +24,7 @@
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/modernizr/src/Modernizr.js"></script>
 
 
 
@@ -110,13 +116,13 @@
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
-<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script>
 <script>
     $(document).foundation();
   </script>
-<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
-<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script> 
 <script>
 
       $(document).foundation();

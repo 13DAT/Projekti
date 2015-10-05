@@ -1,5 +1,11 @@
+<?php
+// Start the session
+session_start();
+if($_SESSION['login'] != 1){
+  header("Location: template-login.php");
+  }
+?>
 <!doctype html>
-s
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
@@ -26,6 +32,8 @@ s
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Lataa tiedosto</h1>
+<div class="nav-bar right">
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
 </header>
 </div>
 </div>
