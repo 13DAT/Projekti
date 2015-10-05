@@ -10,7 +10,7 @@
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.css"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit2.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit4.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
@@ -37,9 +37,11 @@
 
 <div class="row">
 <div class="small-12 columns">
+<center>
+<div id="laatikko">
 <form action="template-login.php" method="POST" name="log">
- <input type="text" name="tunnus" placeholder="Käyttäjätunnus"><br>
- <input type="password" name="salasana" placeholder="Salasana"><br>
+ <input type="text" name="tunnus" placeholder="Käyttäjätunnus">
+ <input type="password" name="salasana" placeholder="Salasana">
  <button name="submit" value="submit">Kirjaudu</button>
 </form>
 <?php
@@ -92,7 +94,8 @@ if($rows != 1){
           
 </div>
 </div>
-
+</div>
+</center>
 <div class="row">
 <div class="small-12 columns">
 <hr>
