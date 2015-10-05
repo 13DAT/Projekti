@@ -14,26 +14,12 @@
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="code.jquery.com/jquery-1.10.2.js"></script>
+<script src="code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 </head>
 <body>
-
-<div class="row">
-<div class="small-12 columns">
-<header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kolmiulotteinen esitys</h1>
-</header>
-</div>
-</div>
-
-<div class="row">
-<div class="small-12 columns">
-<hr>
-</div>
-</div>
 
 <div class="row">
 <div class="small-12 columns">
@@ -51,12 +37,6 @@ session_destroy();
 </div>
 </div>
 
-<div class="row">
-<div class="small-12 columns">
-<hr>
-</div>
-</div>
-</ul>
 
 <div class="row">
 <div class="small-12 columns">
