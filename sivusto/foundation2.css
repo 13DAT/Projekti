@@ -51,6 +51,7 @@ html, body {
   box-sizing: border-box; }
 
 html,
+
 body {
   font-size: 100%; }
 
@@ -5106,8 +5107,8 @@ h6 {
   margin-bottom: 0.5rem; }
 
 hr {
-  border: solid #DDDDDD;
-  border-width: 1px 0 0;
+  border: solid #FF0000;
+  border-width: 0px 0 0;
   clear: both;
   margin: 1.25rem 0 1.1875rem;
   height: 0; }

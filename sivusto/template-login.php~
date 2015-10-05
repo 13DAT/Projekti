@@ -10,7 +10,7 @@
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.css"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit2.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit4.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
@@ -25,6 +25,7 @@
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-register1.php" class="button radius">Luo käyttäjä</a></li></div>
 </header>
 </div>
 </div>
@@ -37,9 +38,11 @@
 
 <div class="row">
 <div class="small-12 columns">
-<form action="login.php" method="GET" name="log">
- <input type="text" name="tunnus" placeholder="Käyttäjätunnus"><br>
- <input type="password" name="salasana" placeholder="Salasana"><br>
+<center>
+<div id="laatikko">
+<form action="template-login.php" method="POST" name="log">
+ <input type="text" name="tunnus" placeholder="Käyttäjätunnus">
+ <input type="password" name="salasana" placeholder="Salasana">
  <button name="submit" value="submit">Kirjaudu</button>
 </form>
 <?php
@@ -53,11 +56,11 @@ $my = mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
       $my->set_charset('utf8');
 
 
-$tunnus = $_GET['tunnus'];
-$salasana = $_GET['salasana'];
+$tunnus = $_POST['tunnus'];
+$salasana = $_POST['salasana'];
 
 
-if(empty($_GET['tunnus']) || empty($_GET['salasana'])){
+if(empty($_POST['tunnus']) || empty($_POST['salasana'])){
     echo "Fill all the fields!";
 }else{
 
@@ -92,7 +95,8 @@ if($rows != 1){
           
 </div>
 </div>
-
+</div>
+</center>
 <div class="row">
 <div class="small-12 columns">
 <hr>

@@ -22,8 +22,8 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="code.jquery.com/jquery-1.10.2.js"></script>
+<script src="code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/modernizr/src/Modernizr.js"></script>
 
 
@@ -109,7 +109,7 @@ if($_SESSION['login'] != 1){
 <div class="footer">
 <p>&copy; 2015 13DAT</p>
 </div>
-</div>0
+</div>
 </div>
 </ul>
 

@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kirjaudu sisään</title>
+<title>Kolmiulotteinen esitys</title>
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
@@ -14,27 +14,14 @@
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/logout-tyylit.css"/>
+<script src="code.jquery.com/jquery-1.10.2.js"></script>
+<script src="code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 </head>
 <body>
-
-<div class="row">
-<div class="small-12 columns">
-<header>
-<h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
-</header>
-</div>
-</div>
-
-<div class="row">
-<div class="small-12 columns">
-<hr>
-</div>
-</div>
-
+<div id="logout">
 <div class="row">
 <div class="small-12 columns">
 <?php
@@ -50,13 +37,7 @@ session_destroy();
           
 </div>
 </div>
-
-<div class="row">
-<div class="small-12 columns">
-<hr>
 </div>
-</div>
-</ul>
 
 <div class="row">
 <div class="small-12 columns">
