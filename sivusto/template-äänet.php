@@ -93,8 +93,6 @@ if($_SESSION['login'] != 1){
                     $asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
                     if(!empty($_FILES)){
 
-                        $targetDir = "/~jonatanlogland/Projekti/Projekti/äänet/";
-
                         $targetDir = "/~patriksipi/Projekti/Projekti/äänet/";
 
                         $fileName = $_FILES['file']['name'];
