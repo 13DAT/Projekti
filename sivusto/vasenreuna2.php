@@ -25,7 +25,7 @@ $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
 
         echo '<li class="ui-state-primary '.$class.'">
                       <a class="th" id="th" role="button" aria-label="Thumbnail" href="template1.php?id='. $rivi['ID'] .'">
-                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/'. $rivi['koodinimi'] .'"/>
+                      <img aria-hidden=true style="width: 13.588em; height: 7.500em;" src="/~anttitaipale/projekti/Projekti/kuvat/'. $rivi['koodinimi'] .'"/>
                       </a>
             </li> ';
 

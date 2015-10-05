@@ -109,7 +109,7 @@ if($_SESSION['login'] != 1){
 <div class="footer">
 <p>&copy; 2015 13DAT</p>
 </div>
-</div>0
+</div>
 </div>
 </ul>
 
