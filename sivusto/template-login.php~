@@ -25,6 +25,7 @@
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-register1.php" class="button radius">Luo käyttäjä</a></li></div>
 </header>
 </div>
 </div>
@@ -37,6 +38,7 @@
 
 <div class="row">
 <div class="small-12 columns">
+<center>
 <div id="laatikko">
 <form action="template-login.php" method="POST" name="log">
  <input type="text" name="tunnus" placeholder="Käyttäjätunnus">
@@ -94,6 +96,7 @@ if($rows != 1){
 </div>
 </div>
 </div>
+</center>
 <div class="row">
 <div class="small-12 columns">
 <hr>

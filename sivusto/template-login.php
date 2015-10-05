@@ -25,6 +25,7 @@
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-register1.php" class="button radius">Luo käyttäjä</a></li></div>
 </header>
 </div>
 </div>
@@ -60,7 +61,7 @@ $salasana = $_POST['salasana'];
 
 
 if(empty($_POST['tunnus']) || empty($_POST['salasana'])){
-    echo "Fill all the fields!";
+    echo " ";
 }else{
 
 
