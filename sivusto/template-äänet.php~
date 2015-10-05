@@ -113,7 +113,7 @@
 
 		echo "<tr>
                   <td>".$rivi['Nimi']."</td> 
-                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Näytä</a></td>
+                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Valitse</a></td>
               </tr>";
 
                 session_start();
