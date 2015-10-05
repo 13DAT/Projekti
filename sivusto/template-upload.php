@@ -1,21 +1,24 @@
 <!doctype html>
+s
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>3D Esitys</title>
+<title>Kolmiulotteinen esitys</title>
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit2.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
-<link rel="stylesheet" type="text/css" href="kuva.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit2.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/footer.css">
+
 </head>
 <body>
 
@@ -39,7 +42,7 @@
 <div class="small-12 columns">
 <div class="nav-bar left">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
+<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
 </ul>
 </div>
 
@@ -122,8 +125,12 @@
 </ul>
 
 <div class="row">
-<div class="small-6">
+<div class="small-12 columns">
 
+<div id="clearfooter"></div>
+<div class="footer">
+<p>&copy; 2015 13DAT</p>
+</div>
 
 </div>
 </div>
@@ -149,17 +156,11 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-</div>
-</div>
-<div class="wrapper">
 
-<div class="push"></div>
-</div>
-<div class="footer">
-  <p>copyright ES</p>
-  </div>
+
+
 </body>
 
-<script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/dropzone2.js"></script>
 
 </html>

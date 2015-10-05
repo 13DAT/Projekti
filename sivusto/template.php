@@ -9,15 +9,16 @@
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/modernizr/src/Modernizr.js"></script>
 
 
 
@@ -43,19 +44,17 @@
 <div class="row">
 <div class="small-12 columns">
 <div class="nav-bar left">
-<audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/%c3%a4%c3%a4net/JOHN%20CENA%20BASS%20BOOSTED%20DISTORTED.mp3" type="audio/mpeg">
-  </audio>
-    <button onclick="document.getElementById('myTune');">Valitse musiikkia</button>
+  <a href="/~jonatanlogland/projekti/Projekti/sivusto/template-äänet.php" class="button radius success">Valitse musiikkia</a></li>
   <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
 </div>
 
+<?php include("ääni_tuo.php");?>
 
 <div class="nav-bar right">
 <ul class="button-group">
-<li><a href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa tiedosto</a></li>
+<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
 <li><button id="ok" class="button radius success">Koko näyttö</a></li>
  
 
@@ -94,25 +93,30 @@
 </div>
 </div>
 </ul>
-<div class="row">
-<div class="small-6 columns">
-<?php include("footer.php")?> 
-</div>
-</div>
 
+
+<div class="row">
+<div class="small-12 columns">
+<div id="clearfooter"></div>
+<div class="footer">
+<p>&copy; 2015 13DAT</p>
+</div>
+</div>0
+</div>
+</ul>
 
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
-<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script>
 <script>
     $(document).foundation();
   </script>
-<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
-<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
+<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script> 
 <script>
 
       $(document).foundation();
@@ -120,6 +124,8 @@
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+
+
+<script src="/~patriksipi/testi/dropzonee.js"></script>
 </body>
 </html>

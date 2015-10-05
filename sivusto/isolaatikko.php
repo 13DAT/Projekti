@@ -4,13 +4,14 @@
             });
 </script>
 
+
 </head>
 
     <body>
 <!-- dropzone laatikot  -->
 <div id="laatikko">
   <div class="ui-priority-primary">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
+       <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
       </form>
   </div>
 </div>
