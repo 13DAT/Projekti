@@ -5,7 +5,7 @@ session_start();
 </head>
 
     <body>
-<!-- dropzone laatikot  -->
+
     </body>
 
 <?php
@@ -31,14 +31,7 @@ session_start();
 
           mysqli_close($yhteys);
           ?>
-
-<div id="laatikko">
-  <div class="ui-priority-primary">
-    <div class="dropzone dz-clickable displayed" id="kaa">
-    <img src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
-    </div>
-
-  </div>
-</div>
-<!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
-     <script src="/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
+          
+    <img style="width: 100%; height:700px;" src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+    
+     

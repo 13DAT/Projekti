@@ -16,7 +16,6 @@ if($_SESSION['login'] != 1){
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone1.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
@@ -134,6 +133,6 @@ if($_SESSION['login'] != 1){
     </script>
 
 
-<script src="/~patriksipi/testi/dropzonee.js"></script>
+
 </body>
 </html>
