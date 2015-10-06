@@ -68,11 +68,12 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-12 columns">
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänet.php" method="POST">
+<div id="laatikko">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone dz-clickable displayed" action="template-äänet.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
-      <div id="laatikko">
-        <div class="tableresponsive">
+      </div>
+        
         <?php
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
@@ -106,7 +107,7 @@ if($_SESSION['login'] != 1){
                 $tulos = mysqli_query($yhteys, "SELECT DISTINCT * 
                                                 FROM projekti_äänet");
 		
-        echo  "<table><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";
+        echo  "<table width=30%><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";
 
         while($rivi = mysqli_fetch_array($tulos)) {
 
@@ -134,8 +135,8 @@ if($_SESSION['login'] != 1){
         </table>
 
 </div>         
-</div>
-</div>
+
+
 
 <div class="row">
 <div class="small-12 columns">
@@ -183,6 +184,4 @@ if($_SESSION['login'] != 1){
 
 
  <script src="/~jannenyman/testi/proto/dropzone.js"></script>
-<link type="css" media="screen" rel="stylesheet" href="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.css" />
-<script type="javascript" src="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.js"></script>
 </html>
