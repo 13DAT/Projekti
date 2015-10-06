@@ -16,14 +16,11 @@ if($_SESSION['login'] != 1){
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/dropzone3.css"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit3.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/foundation2.css"/>
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit2.css"/>
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 
 <script src="/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
@@ -68,20 +65,13 @@ if($_SESSION['login'] != 1){
 </div>
 </div>
 
-<div class="row">
-<div class="small-12 columns">
-<h2>Valitse ääni listasta</h2>
-</div>
-</div>
 
 <div class="row">
 <div class="small-12 columns">
-
-<div id="laatikko">
-    <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänet.php" method="POST">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänet.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
-    </div>
+      <div id="laatikko">
         <div class="tableresponsive">
         <?php
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
@@ -89,15 +79,11 @@ if($_SESSION['login'] != 1){
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
     $yhteys->set_charset('utf8');
-
                     $asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
                     if(!empty($_FILES)){
-
-                        $targetDir = "/~patriksipi/Projekti/Projekti/äänet/";
-
+                        $targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime());
-
                     if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                     echo "Lataus onnistui\n";
                      $sql = ("INSERT INTO projekti_äänet (Pitka, Nimi) VALUES('$targetFileName','$fileName');
@@ -107,13 +93,11 @@ if($_SESSION['login'] != 1){
                         echo "\n";
                     }
                     }
-
-                    /*if($tulos=$yhteys->multi_query($sql)) {
-                        echo " ";}
-                    else {
-                        echo " " . " " . $sql . " " . $yhteys->error;
-                    }*/
-
+                    //if($tulos=$yhteys->multi_query($sql)) {
+                       // echo " ";}
+                    //else {
+                       // echo " " . " " . $sql . " " . $yhteys->error;
+                    //}
             $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
             if(mysqli_connect_errno()) {
                 die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
@@ -121,14 +105,14 @@ if($_SESSION['login'] != 1){
             $yhteys->set_charset('utf8');
                 $tulos = mysqli_query($yhteys, "SELECT DISTINCT * 
                                                 FROM projekti_äänet");
-
-        echo  "<table><thead><tr><th>Äänitiedoston nimi</th><th>Avaa ääni</th></tr></thead>";
+		
+        echo  "<table><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";
 
         while($rivi = mysqli_fetch_array($tulos)) {
 
-		echo "<tr>
+        echo "<tr>
                   <td>".$rivi['Nimi']."</td> 
-                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Valitse</a></td>
+                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Näytä</a></td>
               </tr>";
 
                 session_start();
@@ -145,17 +129,11 @@ if($_SESSION['login'] != 1){
             mysqli_close($yhteys);
         ?>
         <audio id='myTune' name='audioo'>
-
-            <source src="/~jonatanlogland/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
-
             <source src="/~patriksipi/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
-
         </audio>
         </table>
-        </div>
-        </p>
 
-          
+</div>         
 </div>
 </div>
 
