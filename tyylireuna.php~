@@ -17,7 +17,7 @@ img {
 <body>
 
 <?php
-        session_start();
+      
     
         $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
         if(mysqli_connect_errno()) {
@@ -25,23 +25,27 @@ img {
         }
         $yhteys->set_charset('utf8');
         $tulos = mysqli_query($yhteys, "SELECT koodinimi FROM projekti_kuvat
-                                        WHERE ID = 110;");
+                                        WHERE ID = 113;");
         
-      $_SESSION['rivi'] = mysqli_fetch_object($tulos);
+      $koodinimi = mysqli_fetch_object($tulos);
         
         
   
-      $last_line = system('convert' , $_SESSION['rivi'] , $_SESSION['rivi'] , '+append', $_SESSION['rivi']);
       
+      $last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->pelle );
+      #'convert'.' ' . $_SESSION['rivi']->koodinimi . ' ' . $_SESSION['rivi']->koodinimi. ' ' . '+append' . ' ' .$_SESSION['rivi']->koodinimi;
+      #'convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi.' '. '+append'.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi;
+      
+                 
       mysqli_close($yhteys);
 
 ?>
 
 <div>
-<img src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/<?php echo $_SESSION['rivi']->koodinimi; ?>">   
+<img src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $koodinimi->koodinimi; ?>">   
 </div>
 <div>   
-<img src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/<?php echo $_SESSION['rivi']->koodinimi; ?>">
+<img src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $koodinimi->koodinimi; ?>">
 </div>
 
 </body>
