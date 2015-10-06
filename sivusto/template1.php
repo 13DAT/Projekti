@@ -19,25 +19,26 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable.css" />
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable-theme.css" />
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
-
-
 </head>
+
+
 <body>
 
 
 <div class="row">
 <div class="small-12 columns">
-<header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
 <div class="nav-bar right">
 <a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
-</header>
 </div>
 </div>
 
@@ -63,10 +64,9 @@ if($_SESSION['login'] != 1){
 <ul class="button-group">
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
 <?php include("template-isolaatikko.php");?>
-<?php include("fullscreen.php");?>
-<div class="container">
-<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" alt="open gallery" rel="gallery-1" class="button radius success">Koko näyttö</a></li>
-</div>
+
+<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
+
 </ul>
 </div>
 
@@ -135,7 +135,13 @@ if($_SESSION['login'] != 1){
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-
+<script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/jquery172.js"></script>
+  <script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
+  <script>
+    $(function() {
+      $(a.avaa).fullsizable();
+    });
+  </script>
 
 
 </body>

@@ -21,13 +21,15 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable.css" />
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable-theme.css" />
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
-
-
 </head>
+
+
 <body>
 
 
@@ -62,8 +64,11 @@ if($_SESSION['login'] != 1){
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
-<li><a href="#" id="toggle_fullscreen" class="button radius success">Koko näyttö</a>
+<?php include("template-isolaatikko.php");?>
 <?php include("fullscreen.php");?>
+
+<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
+
 </ul>
 </div>
 
@@ -85,7 +90,9 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-10 small-push-2 columns">
-<?php include("template-isolaatikko.php");?>
+<div id="container">
+    <img style="width: 100%; height:700px;" src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+        </div>
 </div>
 
 <div class="small-2 small-pull-10 columns">

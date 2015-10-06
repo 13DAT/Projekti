@@ -25,5 +25,5 @@ session_start();
          
            mysqli_close($yhteys); ?>
 <audio id='myTune' name='audioo'>
-        <source src="http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/äänet/<?php echo $auto->Pitka; ?>">
+        <source src="/~patriksipi/Projekti/Projekti/äänet/<?php echo $auto->Pitka; ?>">
     </audio>
