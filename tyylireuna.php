@@ -25,14 +25,16 @@ img {
         }
         $yhteys->set_charset('utf8');
         $tulos = mysqli_query($yhteys, "SELECT koodinimi FROM projekti_kuvat
-                                        WHERE ID = 114;");
+                                        WHERE ID = 130;");
         
       $koodinimi = mysqli_fetch_object($tulos);
         
         
   
       
-      $last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->pellee );
+      
+      $last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->asd );
+      echo $last_line;
       #'convert'.' ' . $_SESSION['rivi']->koodinimi . ' ' . $_SESSION['rivi']->koodinimi. ' ' . '+append' . ' ' .$_SESSION['rivi']->koodinimi;
       #'convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi.' '. '+append'.' '. "/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$_SESSION['rivi']->koodinimi;
       
