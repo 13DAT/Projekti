@@ -31,7 +31,6 @@ session_start();
 
           mysqli_close($yhteys);
           ?>
-          
-    <img style="width: 100%; height:700px;" src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+
     
      
