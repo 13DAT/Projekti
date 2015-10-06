@@ -33,7 +33,7 @@
 	<p>I will be fullscreen!</p>
 <div id="container">
   <p>
-	<img src="https://wallpaperscraft.com/image/blocks_rainbow_3d_graphics_background_76559_3840x2160.jpg" width="1440" height="700">
+	<img src="http://img.avatv.fi/mn_kuvat/mtv3/helmi/minisaitit/kapalakerho/kissat/2012/03/1356549.jpg" width="1440" height="700">
 	</p>
 </div>
 	<script>
