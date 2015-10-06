@@ -112,6 +112,7 @@ if($_SESSION['login'] != 1){
 </div>
 </div>
 </ul>
+</div>
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
