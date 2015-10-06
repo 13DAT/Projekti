@@ -25,7 +25,6 @@
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Kirjaudu sisään</h1>
-<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-register1.php" class="button radius">Luo käyttäjä</a></li></div>
 </header>
 </div>
 </div>
@@ -40,58 +39,33 @@
 <div class="small-12 columns">
 <center>
 <div id="laatikko">
-<form action="template-login.php" method="POST" name="log">
- <input type="text" name="tunnus" placeholder="Käyttäjätunnus">
- <input type="password" name="salasana" placeholder="Salasana">
- <button name="submit" value="submit">Kirjaudu</button>
-</form>
-<?php
-
-session_start();
-
-$my = mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
-      if(mysqli_connect_errno()){
-        die ("mysql, virhe yhteyden luonnissa: " . mysqli_connect_error());
-      }
-      $my->set_charset('utf8');
-
-
-$tunnus = $_POST['tunnus'];
-$salasana = $_POST['salasana'];
-
-
-if(empty($_POST['tunnus']) || empty($_POST['salasana'])){
-    echo " ";
-}else{
-
-
-$query = "SELECT * FROM tunnus WHERE tunnus='$tunnus' AND
-         salasana='$salasana' ";
-$result = mysqli_query($my,$query);
-
-
-if($result === false){
-     die;
-     echo "Kirjautuminen epäonnistui!";
-}else{
-}
-$rows=mysqli_num_rows($result);
-if($rows != 1){
-  echo "Käyttäjätunnus tai salasana väärin!";
-}else{
-       $login = 1;
-
-     while($row = mysqli_fetch_array($result)){
-       $_SESSION['id'] = $row['id'];
-       $_SESSION['tunnus'] = $row['tunnus'];
-       $_SESSION['salasana'] = $row['salasana'];
-       $_SESSION['login'] = $login;
+ <form action="template-register1.php" method="POST">
+  <input type="text" name="tunnus" placeholder="Käyttäjätunnus">
+  <input type="password" name="salasana" placeholder="Salasana">
+  <button name="submit" value="TRUE">Luo tili</button>
+  <a href="template-login.php">Kirjaudu sisään</a>
+  <?php
+    $my = mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
+    if(mysqli_connect_errno()){
+      die ("mysql, virhe yhteyden luonnisse: " . mysqli_connect_error());
     }
+    $my->set_charset('utf8');
+    $salasana =$my->real_escape_string(trim(htmlentities(strip_tags($_POST['salasana']))));
+    $tunnus =$my->real_escape_string(trim(htmlentities(strip_tags($_POST['tunnus']))));
+    $submit =$my->real_escape_string(trim(htmlentities(strip_tags($_POST['submit']))));
 
-    header("Location: template.php");
-}}
- mysqli_close($my);
-?>
+    if($submit){
+      $sql = "INSERT INTO `data14`.`tunnus` (`tunnus`,`salasana`)
+              VALUES('$tunnus','$salasana');";
+      if($tulos = $my->multi_query($sql)){
+        echo'<p>Käyttäjä luotu!</p>';
+        
+      }else{
+        echo '<p>Käyttäjän luominen epäonnistui.</p>';
+        
+      }}
+    mysqli_close($my);
+  ?>
           
 </div>
 </div>

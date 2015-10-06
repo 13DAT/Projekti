@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ääni</title>
+    <link rel="shortcut icon" href="autouusi.png">	
+	<link rel="stylesheet" href="/~jannenyman/testi/proto/dropzone.css">
+    <link rel="stylesheet" href="/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation/css/foundation.css"/>
+	<script src="/~jannenyman/projekti/Trafi/foundation2/bower_components/modernizr/modernizr.js"></script>
+	<link rel="stylesheet" href="/~jannenyman/projekti/Trafi/foundation2/bower_components/icons/foundation-icons/foundation-icons.css">  
+	</head>
+
+
+  <div class="tableresponsive">
+  <body>
+	<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänett.php" method="POST">  
+    	<input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
+	</form>
+        <h1>Ääni</h1> 
+        <?php
+	$yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
+    if(mysqli_connect_errno()) {
+        die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
+    }
+    $yhteys->set_charset('utf8');
+
+                    $asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
+                    if(!empty($_FILES)){
+                        $targetDir = "/home/patriksipi/public_html/Projekti/Projekti/sivusto/äänet/";
+                        $fileName = $_FILES['file']['name'];
+                        $targetFileName = md5(microtime());
+
+                    if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
+                    echo "Lataus onnistui\n";
+                     $sql = ("INSERT INTO projekti_äänet (Pitka, Nimi) VALUES('$targetFileName','$fileName');
+                              UPDATE projekti_äänet           
+                              WHERE id = ID;");
+                    } else {
+                        echo "\n";
+                    }
+                    }
+
+                   /* if($tulos=$yhteys->multi_query($sql)) {
+                        echo " ";}
+                    else {
+                        echo " " . " " . $sql . " " . $yhteys->error;
+                    }*/			
+
+			$yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
+            if(mysqli_connect_errno()) {
+                die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
+            }
+            $yhteys->set_charset('utf8');
+                $tulos = mysqli_query($yhteys, "SELECT DISTINCT * 
+                                                FROM projekti_äänet");
+        
+        echo  "<table><thead><tr><th>1</th><th>2</th><th>3</td></tr></thead>";                                    
+              
+        while($rivi = mysqli_fetch_array($tulos)) {
+        
+        echo "<tr>
+                  <td>".$rivi['Nimi']."</td> 
+                  <td>".$rivi['Pitka']."</td>
+                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Näytä</a></td>
+              </tr>";
+				
+				session_start();
+				    '<br /><a href="template.php"> </a>';
+				    '<br /><a href="template.php?' . SID . '"> </a>';
+        			$_SESSION['Nimi'] = $rivi['Nimi'];
+        			$_SESSION['Pitka'] = $rivi['Pitka'];
+        			$_SESSION['ID'] = $rivi['ID'];
+         		 '<br /><a href="template.php"> </a>'; 
+        		 '<br /><a href="template.php?' . SID . '"> </a>'; 
+                }
+            
+     
+            mysqli_close($yhteys);
+        ?>
+		<audio id='myTune' name='audioo'>
+			<source src="/~patriksipi/Projekti/Projekti/sivusto/äänet/<?php echo $rivi->Pitka; ?>">
+		</audio>
+		</table>
+        </div>
+		</p>
+        
+    <script>
+        document.write('<script src=js/vendor/' +
+        ('__proto__' in {} ? 'zepto' : 'jquery') +
+        '.js><\/script>')
+    </script>
+	<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+	<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+	<script>
+    	$(document).foundation();
+  	</script>
+	<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+	<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+	<script>
+        $(document).foundation();
+        var doc = document.documentElement;
+        doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+    
+    <script src="/~jannenyman/testi/proto/dropzone.js"></script>
+    <link type="css" media="screen" rel="stylesheet" href="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.css" />
+    <script type="javascript" src="/~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.js"></script>
+  </body>
+</html>
