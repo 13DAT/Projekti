@@ -65,7 +65,6 @@ if($_SESSION['login'] != 1){
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
-<li><button id="ok" class="button radius success">Koko näyttö</a></li>
 </ul>
 </div>
 

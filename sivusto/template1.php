@@ -62,12 +62,14 @@ if($_SESSION['login'] != 1){
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
-<li><button id="ok" class="button radius success">Koko näyttö</a></li>
- 
-
-
+<?php include("template-isolaatikko.php");?>
+<?php include("fullscreen.php");?>
+<div class="container">
+<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" alt="open gallery" rel="gallery-1" class="button radius success">Koko näyttö</a></li>
+</div>
 </ul>
 </div>
+
 </div>
 </div>
 
@@ -86,7 +88,9 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-10 small-push-2 columns">
-<?php include("template-isolaatikko.php");?>
+<div id="container">
+    <img style="width: 100%; height:700px;" src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+        </div>
 </div>
 
 <div class="small-2 small-pull-10 columns">

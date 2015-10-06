@@ -31,14 +31,8 @@ session_start();
 
           mysqli_close($yhteys);
           ?>
-
-
-  <div class="ui-priority-primary">
-    
+<div id="container">          
     <img style="width: 100%; height:700px;" src="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>">
+    </div>
     
-
-  </div>
-
-<!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
      
