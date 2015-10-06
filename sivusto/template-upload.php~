@@ -1,9 +1,12 @@
 <?php
 // Start the session
 session_start();
+$SID = session_id();
+echo $_SESSION['SID'];
 if($_SESSION['login'] != 1){
   header("Location: template-login.php");
   }
+echo $SID;
 ?>
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
@@ -32,6 +35,8 @@ if($_SESSION['login'] != 1){
 <div class="small-12 columns">
 <header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Lataa tiedosto</h1>
+<div class="nav-bar right">
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
 </header>
 </div>
 </div>
@@ -81,10 +86,8 @@ if($_SESSION['login'] != 1){
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
     $yhteys->set_charset('utf8');
-
-
-
-
+    echo session_id();
+    echo $SID;
 
                     if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
@@ -93,9 +96,9 @@ if($_SESSION['login'] != 1){
 
                         if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
-                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi) VALUES('$targetFileName','$fileName');
-                              UPDATE projekti_kuvat           
-                              WHERE id = ID;;");
+                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi, SID) VALUES('$targetFileName','$fileName','$SID');
+                                     UPDATE projekti_kuvat           
+                                     WHERE id = ID;;");
                         } else {
                             echo " ";
                         }
