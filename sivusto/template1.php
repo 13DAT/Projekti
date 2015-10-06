@@ -142,7 +142,18 @@ if($_SESSION['login'] != 1){
       $(a.avaa).fullsizable();
     });
   </script>
-
-
+<script>
+function confirm_alert(node) {
+    return confirm("Oletko varma että haluat poistaa kaikki kuvat?");
+    }
+    </script>
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-primary"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
 </body>
 </html>

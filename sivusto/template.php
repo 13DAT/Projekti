@@ -19,27 +19,26 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/isolaatikko-tyylit.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/jquery.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/vasentyyli.css">
+<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/fullscreen.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
-<link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/responsive.scss">
-<script src="code.jquery.com/jquery-1.10.2.js"></script>
-<script src="code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/modernizr/src/Modernizr.js"></script>
-
-
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable.css" />
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable-theme.css" />
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
 </head>
+
+
 <body>
 
-<div class="tableresponsive">
 
 <div class="row">
 <div class="small-12 columns">
-<header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%;">Kolmiulotteinen esitys</h1>
 <div class="nav-bar right">
 <a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
-</header>
 </div>
 </div>
 
@@ -50,11 +49,10 @@ if($_SESSION['login'] != 1){
 </div>
 </div>
                                      
-  <div class="row">
-  <div class="small-12 columns">
-
+<div class="row">
+<div class="small-12 columns">
 <div class="nav-bar left">
-  <a href="/~jonatanlogland/projekti/Projekti/sivusto/template-äänet.php" class="button radius success">Valitse musiikkia</a>
+  <a href="/~jonatanlogland/projekti/Projekti/sivusto/template-äänet.php" class="button radius success">Valitse musiikkia</a></li>
   <button onclick="document.getElementById('myTune').play();">Soita musiikkia</button>
   <button onclick="document.getElementById('myTune').pause()">Keskeytä musiikki</button>
   <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Lopeta musiikki</button>
@@ -65,11 +63,15 @@ if($_SESSION['login'] != 1){
 <div class="nav-bar right">
 <ul class="button-group">
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
+<?php include("template-isolaatikko.php");?>
+
+<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
+
 </ul>
 </div>
 
-  </div>
-  </div>
+</div>
+</div>
 
 <div class="row">
 <div class="small-12 columns">
@@ -83,11 +85,12 @@ if($_SESSION['login'] != 1){
 </div>
 </div>
 
-
 <div class="row">
 <div class="small-10 small-push-2 columns">
 <?php include("isolaatikko.php");?>
 </div>
+
+
 
 <div class="small-2 small-pull-10 columns">
 <?php include("vasenreuna2.php");?>
@@ -111,19 +114,19 @@ if($_SESSION['login'] != 1){
 </div>
 </div>
 </ul>
-</div>
+
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
 <script>
     $(document).foundation();
   </script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/jquery-assets.js"></script>
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/bower_components/foundation/js/foundation.min.js"></script> 
+<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
 <script>
 
       $(document).foundation();
@@ -131,8 +134,25 @@ if($_SESSION['login'] != 1){
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-
-
-
+<script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/jquery172.js"></script>
+  <script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
+  <script>
+    $(function() {
+      $(a.avaa).fullsizable();
+    });
+  </script>
+<script>
+function confirm_alert(node) {
+    return confirm("Oletko varma että haluat poistaa kaikki kuvat?");
+    }
+    </script>
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-primary"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
 </body>
 </html>

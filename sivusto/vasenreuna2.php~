@@ -48,7 +48,7 @@ $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
 </body>
 
 
-<script src="/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
+
 <script type="text/javascript">
 
 </script>

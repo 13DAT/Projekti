@@ -1,14 +1,3 @@
-   <script>
-  $(function() {
-    $( "#sortable" ).sortable({
-      placeholder: "ui-state-primary"
-    });
-    $( "#sortable" ).disableSelection();
-  });
-  </script>
-
-</head>
-<body>
 <ul id="sortable">
 <?php>
 $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
@@ -44,11 +33,3 @@ $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
         ?>
 
 </ul>
-
-</body>
-
-
-
-<script type="text/javascript">
-
-</script>
