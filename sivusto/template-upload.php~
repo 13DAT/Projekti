@@ -81,9 +81,17 @@ if($_SESSION['login'] != 1){
     }
     $yhteys->set_charset('utf8');
                     $sqli = ("SELECT COUNT(SID) FROM projekti_kuvat");           
+<<<<<<< HEAD
                         if($sqli >= 5);{             
                         echo "dwa";}
 						else echo "pelle";
+=======
+                        #if($sqli == 5){             
+                        #echo "dwa";}
+                        #else{ echo "Pelle";}
+                        $num_rows = mysqli_num_rows($sqli);
+						echo "$num_rows Rows\n";
+>>>>>>> 5254957babe3ec251f0dbb8ce6424e01b7d7164d
                     if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];

@@ -79,10 +79,12 @@ if($_SESSION['login'] != 1){
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
     $yhteys->set_charset('utf8');
-                    $sqli = ("SELECT COUNT(SID) FROM projekti_kuvat");           
-                        if($sqli >= 5);{             
-                        echo "dwa";}
-						else echo "pelle";
+                    #$sqli = ("SELECT COUNT(SID) FROM projekti_kuvat");           
+                        #if($sqli == 5){             
+                        #echo "dwa";}
+                        #else{ echo "Pelle";}
+                        #$num_rows = mysqli_num_rows($sqli);
+						#echo "$num_rows Rows\n";
                     if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
