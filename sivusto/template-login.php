@@ -1,7 +1,6 @@
 <?php 
 session_start();
 $SID = session_id();
-echo $SID;
 ?>
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->

@@ -83,8 +83,9 @@ $rows=mysqli_num_rows($result);
 if($rows != 1){
   echo "Käyttäjätunnus tai salasana väärin!";
 }else{
+        
        $login = 1;
-
+       $_SESSION['SID'] = $SID;
      while($row = mysqli_fetch_array($result)){
        $_SESSION['id'] = $row['id'];
        $_SESSION['tunnus'] = $row['tunnus'];
