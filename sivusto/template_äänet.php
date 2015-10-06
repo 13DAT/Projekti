@@ -63,13 +63,12 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-12 columns">
-
-	<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template_äänet.php" method="POST">  
+<div id="laatikko">
+	<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänet.php" method="POST">  
     	<input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
 	</form>
-
-		<div class="tableresponsive"> 
-        <h1>Ääni</h1> 
+</div>
+		<div class="tableresponsive">
         <?php
 	$yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
