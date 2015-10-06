@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+$SID = session_id();
 if($_SESSION['login'] != 1){
   header("Location: template-login.php");
   }
@@ -74,51 +75,42 @@ if($_SESSION['login'] != 1){
 </div>
 </center>
 <?php
-
-
-
-
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
     $yhteys->set_charset('utf8');
-
-
-
-
-
+                    $sqli = ("SELECT COUNT(SID) FROM projekti_kuvat");           
+                        if($sqli >= 5);{             
+                        echo "dwa";}
+						else echo "pelle";
                     if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime()).'.jpg';
-
+                        
+                           
                         if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
-                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi) VALUES('$targetFileName','$fileName');
-                              UPDATE projekti_kuvat           
-                              WHERE id = ID;;");
+                            $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi, SID) VALUES('$targetFileName','$fileName','$SID');
+                                     UPDATE projekti_kuvat           
+                                     WHERE id = ID;;");
                         } else {
                             echo " ";
                         }
                     } else {
                         echo " ";
                     }
-
                     if($tulos=$yhteys->multi_query($sql)) {
                         echo " ";}
                     else {
                         echo " ";
                     }
+                  
    # echo '<pre>';
     #var_export($GLOBALS);
-
     #echo '</pre>';
-
     $yhteys->close();
-
-
-
 ?>
 
           

@@ -1,3 +1,8 @@
+<?php 
+session_start();
+$SID = session_id();
+echo $SID;
+?>
 <!doctype html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
@@ -47,7 +52,6 @@
 </form>
 <?php
 
-session_start();
 
 $my = mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
       if(mysqli_connect_errno()){
@@ -79,8 +83,9 @@ $rows=mysqli_num_rows($result);
 if($rows != 1){
   echo "Käyttäjätunnus tai salasana väärin!";
 }else{
+        
        $login = 1;
-
+       $_SESSION['SID'] = $SID;
      while($row = mysqli_fetch_array($result)){
        $_SESSION['id'] = $row['id'];
        $_SESSION['tunnus'] = $row['tunnus'];
