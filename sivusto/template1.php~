@@ -24,7 +24,8 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable.css" />
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable-theme.css" />
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="http://foundation.zurb.com/assets/js/modernizr.js"></script>
 
@@ -121,13 +122,9 @@ if($_SESSION['login'] != 1){
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
-<script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
 <script>
     $(document).foundation();
   </script>
-<script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
-<script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
 <script>
 
       $(document).foundation();
@@ -135,8 +132,8 @@ if($_SESSION['login'] != 1){
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/jquery172.js"></script>
-  <script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
+<script src="/~erkkasailynoja/bower/jquery172.js"></script>
+  <script src="/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
   <script>
     $(function() {
       $(a.avaa).fullsizable();

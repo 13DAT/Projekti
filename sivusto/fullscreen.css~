@@ -25,5 +25,6 @@
       right: 40px;
       background-color: green;
     }
-    
-    
+    :fullscreen #fullsized_fullscreen { background-color: blue; }
+    :-webkit-full-screen #fullsized_fullscreen { background-color: blue; }
+    :-moz-full-screen #fullsized_fullscreen { background-color: blue; }
