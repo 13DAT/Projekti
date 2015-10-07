@@ -31,7 +31,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<a href="#" id="toggle_fullscreen">Toggle Fullscreen</a>
 	<p>I will be fullscreen!</p>
-<div id="container">
+<div  id="container">
+  <style>div {width: 100%; height: 100%;} </style>
   <p>
 	<img src="http://img.avatv.fi/mn_kuvat/mtv3/helmi/minisaitit/kapalakerho/kissat/2012/03/1356549.jpg" width="1440" height="700">
 	</p>
