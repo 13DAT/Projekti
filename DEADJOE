@@ -58,3 +58,790 @@ vasenreuna.php
 vasenreuna.php
 vasenreuna.php
 vasenreuna.php
+
+*** These modified files were found in JOE when it aborted on Wed Sep 23 11:49:04 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File 'vasenreuna2.php'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>vasenreuna</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
+
+
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+</head>
+<body>
+<ul id="sortable">
+<?php
+#Otetaan yhteys palvelimeen ja valitaan data13- tietokanta käyttöön
+  $yhteys=mysqli_connect("localhost", "data14", "mv2Mqbm888DvqbjT","data14");
+  #Tarkistetaan yhteyden tila
+  if(mysqli_connect_errno()) {
+    die("MySQL, Virhe yhteyden luonnissa: ". mysqli_connect_error());
+
+  }
+  #Valitaan tietokannan merkistä
+  $yhteys->set_charset('utf8');
+$tulos = mysqli_query($yhteys,,"SELECT * FROM projekti_kuvat ORDER BY id");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script type="text/javascript">
+</script>
+
+
+
+
+</body>
+</html>
+*** File '(Unnamed)'
+vasenreuna.php
+vasenreuna.php
+vasenreuna.php
+append.php
+vasenreuna.php
+vasenreuna.php
+vasenreuna2.php
+vasenreuna2.php
+tavoite1.php
+vasenreuna2.php
+vasenreuna2.php
+
+<<<<<<< HEAD
+*** These modified files were found in JOE when it aborted on Wed Sep 23 13:54:14 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+
+*** File '(Unnamed)'
+root
+
+*** File '(Unnamed)'
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna3.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+=======
+*** These modified files were found in JOE when it aborted on Fri Sep 25 09:43:53 2015
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+autoindent
+autoindent
+
+*** File '(Unnamed)'
+root
+root
+
+*** File '(Unnamed)'
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+ääni.php
+
+<<<<<<< HEAD
+*** These modified files were found in JOE when it aborted on Tue Sep 29 13:40:01 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+autoindent
+autoindent
+autoindent
+autoindent
+autoindent
+
+*** File '(Unnamed)'
+root
+root
+root
+root
+root
+
+*** File '(Unnamed)'
+ääni_tuo.php
+ääni_tuo.php
+ääni_tuo.php
+ääni_tuo.php
+session.php
+session.php
+session.php
+session.php
+tyylireuna.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+session.php
+
+*** These modified files were found in JOE when it aborted on Tue Sep 29 13:40:01 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+ääni_tuo.php
+ääni_tuo.php
+ääni_tuo.php
+ääni_tuo.php
+ääni_tuo.php
+session.php
+session.php
+session.php
+session.php
+ääni_tuo.php
+ääni.php
+=======
+*** These modified files were found in JOE when it aborted on Mon Sep 28 09:29:09 2015
+*** JOE was aborted because the terminal closed
+
+*** File 'vasenreuna2.php'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>vasenreuna</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~patriksipi/testi/dropzone.css">
+  <link rel="stylesheet" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/vasentyyli.css">
+ 
+   <script>
+  $(function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+</head>
+<body>
+ <?php
+        $m=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
+        if(mysqli_connect_errno()) {
+        die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
+        }
+        $m->set_charset('utf8');
+
+        $sql = "SELECT * FROM projekti_kuvat ORDER BY id";
+        # Suoritetaan SQL-kysely
+        $rows = array();
+        if($tulos = $m->query($sql) ) {
+        # tulostetaan tiedot while()-silmukassa
+        while( $t = $tulos->fetch_object() ) {
+        # lisätään $rows-taulukkoon karuselli-tietokannan rivin tiedot  
+        $rows[]=array($t->id,$t->md5,$t->nimi,$t->url,);
+        }
+        } else {
+        echo "Virhe";
+        }
+        ?>
+
+<ul id="sortable">
+  <?php  
+
+          $o=0;
+          foreach($rows as $i) {
+            if(($o++)==0) $class="active";
+            else $class="";
+            echo '<li class="ui-stste-default '.$class.'">
+					<a class="th" id="th" role="button" aria-label="Thumbnail" href="http://cosmo.kpedu.fi/~mathiasthlin/projekti/Projekti/oikealaatikko.php">
+					  <img aria-hidden=true src="'.$i[3].'" alt="'.$i[1].'" "/>
+						 </a>
+       			 </li> ';
+          }
+
+        ?>
+
+
+</body>
+
+
+<script src="http://cosmo.kpedu.fi/~patriksipi/testi/dropzonee.js"></script>
+<script type="text/javascript">
+
+</script>
+
+
+</html>
+*** File '(Unnamed)'
+hr
+footer
+sortable
+sortable
+sortable
+sortable
+ui-priority
+ui-priority
+ui-priority-primary
+border
+
+*** File '(Unnamed)'
+isolaatikko.php
+vasenreuna2.php
+vasenreuna2.php
+vasenreuna2.php
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+template.php
+template.php
+template.php
+vasenreuna2.php
+
+*** These modified files were found in JOE when it aborted on Mon Sep 28 10:52:46 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hr
+footer
+sortable
+sortable
+sortable
+sortable
+ui-priority
+ui-priority
+ui-priority-primary
+border
+
+*** File '(Unnamed)'
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasentyyli.css
+vasenreuna.php
+
+*** These modified files were found in JOE when it aborted on Mon Sep 28 11:20:57 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+hr
+footer
+sortable
+sortable
+sortable
+sortable
+ui-priority
+ui-priority
+ui-priority-primary
+border
+
+*** File '(Unnamed)'
+vasenreuna2.php
+vasenreuna2.php
+vasentyyli.css
+vasentyyli.css
+template-upload.php
+template-upload.php
+upload.php
+template.php
+template.php
+template.php
+upload.php
+>>>>>>> 2fce2d31ba268d3cbd9be89d2f6fe9ab412e35e5
+<<<<<<< HEAD
+
+*** These modified files were found in JOE when it aborted on Tue Sep 29 11:37:27 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Tue Sep 29 14:10:51 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Wed Sep 30 12:07:21 2015
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Wed Sep 30 13:47:57 2015
+*** JOE was aborted because the terminal closed
+
+*** File 'tyylireuna.php'
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+
+div {
+  display: inline-block;
+}
+img {
+    width: 720px;
+    height: 700px;
+    margin-left: -0.27em;
+    }
+
+</style>
+</head>
+<body>
+
+<?php
+        session_start();
+    
+        $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
+        if(mysqli_connect_errno()) {
+          die("MySQL, virhe yhteyden luonnissa: ".mysqli_connect_error());
+        }
+        $yhteys->set_charset('utf8');
+        $tulos = mysqli_query($yhteys, "SELECT koodinimi FROM projekti_kuvat
+                                        WHERE ID = 107;");
+        
+        $_SESSION['rivi'] = mysqli_fetch_object($tulos); 
+        $_SESSION['rivi']->koodinimi = mysqli_fetch_object($koodinimi);
+        
+  
+      $last_line = system('convert',  $koodinimi , $koodinimi , '+append' , $koodinimi);
+      
+      mysqli_close($yhteys);
+
+?>
+
+<div>
+<img src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/<?php echo $_SESSION['rivi']->koodinimi; ?>">   
+</div>
+<div>   
+<img src="http://cosmo.kpedu.fi/~anttitaipale/projekti/Projekti/kuvat/<?php echo $_SESSION['rivi']->koodinimi; ?>">
+</div>
+
+</body>
+</html>
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Thu Oct  1 13:48:26 2015
+=======
+>>>>>>> f5299201d8e5dffdc32bf120465796f50fb70022
+
+*** These modified files were found in JOE when it aborted on Wed Sep 30 13:49:43 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+ääni_testi2.php
+ääni_testi2.php
+ääni_testi2.php
+ääni_testi2.php
+ääni_test.php
+ääni_test.php
+ääni_test.php
+ääni_test.php
+ääni_test.php
+ääni.php
+ääni_testi.php
+
+*** These modified files were found in JOE when it aborted on Thu Oct  1 13:40:13 2015
+>>>>>>> 485980399a0f7652ef82901016afe2ef8e08c994
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Mon Oct  5 11:48:51 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Mon Oct  5 12:52:56 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Mon Oct  5 13:54:33 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Tue Oct  6 08:16:09 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+
+*** These modified files were found in JOE when it aborted on Tue Oct  6 08:34:13 2015
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php
+tyylireuna.php

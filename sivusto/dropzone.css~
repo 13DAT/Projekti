@@ -1,7 +1,4 @@
-/*
- * The MIT License
- * Copyright (c) 2012 Matias Meno <m@tias.me>
- */
+
 @-webkit-keyframes passing-through {
   0% {
     opacity: 0;
@@ -174,10 +171,9 @@
   box-sizing: border-box; }
 
 .dropzone {
-  min-height: 100px;
-  border: 0px solid rgba(0, 0, 0, 0.3);
+  min-height: 700px;
+  border: 0 px;
   background: transparent;
-  padding: 20px 20px; }
   .dropzone.dz-clickable {
     cursor: pointer; }
     .dropzone.dz-clickable * {
@@ -386,4 +382,3 @@
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-bottom: 6px solid #be2626; }
-

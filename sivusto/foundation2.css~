@@ -51,11 +51,12 @@ html, body {
   box-sizing: border-box; }
 
 html,
+
 body {
   font-size: 100%; }
 
 body {
-  background: #fff;
+  background-image: url("taustakuva1.jpg");
   color: #222;
   padding: 0;
   margin: 0;
@@ -70,7 +71,7 @@ a:hover {
   cursor: pointer; }
 
 img {
-  max-width: 100%;
+  width: auto;
   height: auto; }
 
 img {
@@ -109,7 +110,7 @@ img {
 
 img {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: center; }
 
 textarea {
   height: auto;
@@ -2822,7 +2823,7 @@ select {
   -webkit-appearance: none !important;
   border-radius: 0;
   background-color: #FAFAFA;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
+  background-image: url("taustakuva.jpg");
   background-position: 100% center;
   background-repeat: no-repeat;
   border-style: solid;
@@ -5106,8 +5107,8 @@ h6 {
   margin-bottom: 0.5rem; }
 
 hr {
-  border: solid #DDDDDD;
-  border-width: 1px 0 0;
+  border: solid #FF0000;
+  border-width: 0px 0 0;
   clear: both;
   margin: 1.25rem 0 1.1875rem;
   height: 0; }
@@ -6089,6 +6090,9 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+
+
+
 
 /*# sourceMappingURL=foundation.css.map */
 

@@ -1,0 +1,4 @@
+	SELECT COUNT(*) AS `lukumaara`
+	FROM `nimet`,`tyontekijat`
+	WHERE nimet.sotu=tyontekijat.id
+	AND `asema`="Opiskelija";

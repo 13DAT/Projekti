@@ -161,7 +161,7 @@ nfo at [www.dropzonejs.com](http://www.dropzonejs.com)
         _ref = this.element.getElementsByTagName("div");
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           child = _ref[_i];
-          if (/(^| )dz-message($| )/.test(child.className)) {
+          if (/(^| )dz-message($| )/.test(child.className)) { 
             messageElement = child;
             child.className = "dz-message";
             continue;

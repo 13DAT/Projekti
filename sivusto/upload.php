@@ -2,7 +2,7 @@
 <html>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="/~jannenyman/testi/proto/dropzone.css">
     <head>
         <title>dropzone</title>
         <meta charset="UTF-8">
@@ -30,5 +30,5 @@ echo "File is valid, and was successfully uploaded.\n";
 }
         ?>
     </body>
-     <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
+     <script src="/~jannenyman/testi/proto/dropzone.js"></script>
 </html>

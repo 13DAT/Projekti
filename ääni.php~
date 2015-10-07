@@ -4,6 +4,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.css">
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation/css/foundation.css"/>
+<link rel="stylesheet" href="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/icons/foundation-icons/foundation-icons.css">
+<script src="http://cosmo.kpedu.fi/~jannenyman/projekti/Trafi/foundation2/bower_components/foundation2/modernizr/modernizr.js"></script>
     <head>
         <title>dropzone</title>
         <meta charset="UTF-8">
@@ -19,32 +22,95 @@
 
     <body>
 
-<audio id="myTune">
-  <source src="http://cosmo.kpedu.fi/~patriksipi/testi/kuvat/Silly_Farts-Joe-1473367952-2.mp3" type="audio/mpeg">             
-</audio>
 <button onclick="document.getElementById('myTune').play()">Play Music</button>
 <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
 <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
 
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="ääni.php" method="POST">
-    <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
-</form>
 <?php
-    
-	if(!empty($_FILES)){
-		$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
-		    $fileName = $_FILES['file']['name'];
-	        $targetFile = $targetDir.$fileName;
-	if(move_uploaded_file($_FILES['file']['tmp_name'],$targetFile)){
-		echo "Lataus onnistui\n";
-    } else {
-        echo "\n";
+	#$aani = "6818a40a6bca189a642c15e0f17574861443160315";
+    $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
+    if(mysqli_connect_errno()) {
+        die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
-	}
-	$filename = md5(time());
-        ?>
+    $yhteys->set_charset('utf8');
+    
+    
+    
+	
+					$asia = $yhteys->real_escape_string(trim(htmlentities(strip_tags($_POST['MAX_FILE_SIZE']))));
+					if(!empty($_FILES)){
+						$targetDir = "/home/patriksipi/public_html/Projekti/Projekti/äänet/";
+					    $fileName = $_FILES['file']['name'];
+    			        $targetFileName = md5(microtime());
+				        
+					if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
+					echo "Lataus onnistui\n";
+					 $sql = ("INSERT INTO projekti_äänet (Pitka, Nimi) VALUES('$targetFileName','$fileName');
+                              UPDATE projekti_äänet           
+                              WHERE id = ID;;");
+    				} else {
+    				    echo "\n";
+    				}
+					}
+                     
+	 				if($tulos=$yhteys->multi_query($sql)) {
+                    	echo " ";}
+                    else {
+                        echo " " . " " . $sql . " " . $yhteys->error;
+                    }
+
+/*    echo '<pre>';
+    var_export($GLOBALS);
+    
+    echo '</pre>';
+*/				
+    $yhteys->close();
+/*include("ääni_2.php");*/
+        $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
+        if(mysqli_connect_errno()) {                                     
+          die("MySQL, virhe yhteyden luonnissa: ".mysqli_connect_error());                                                  
+        }                                                  
+        $yhteys->set_charset('utf8');
+        $tulos = mysqli_query($yhteys, "SELECT Nimi FROM projekti_äänet
+                                        ORDER BY Nimi DESC");              
+        while($rivi = mysqli_fetch_array($tulos)) {                                                              
+        echo "<tr>                      
+                    <td>".$rivi['Nimi']."</td>                                               
+                    <td><a href=\"ääni_tuo.php?id=".$rivi['ID']."\" class='small secondary button'>Näytä kuvaus</a><td>
+              </tr>";                                            
+        }
+            session_start();
+            $_SESSION['Nimi'] = $rivi['Nimi'];                                                                                                    
+            '<br /><a href="ääni_tuo.php"> </a>';
+            '<br /><a href="ääni_tuo.php?' . SID . '"> </a>';
+        
+	echo '<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="ääni.php" method="POST">  
+            <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
+            <audio id="myTune" name="audioo">
+                <source src="http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/%C3%A4%C3%A4net/" type="audio/mpeg" name="hk">
+            </audio>
+        </form>';
+mysqli_close($yhteys);
+?>    
     </body>
 
      <script src="http://cosmo.kpedu.fi/~jannenyman/testi/proto/dropzone.js"></script>
+     <script>
+      document.write('<script src=js/vendor/' +
+      ('__proto__' in {} ? 'zepto' : 'jquery') +
+      '.js><\/script>')
+      </script>
 
+      <script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
+      <script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+      <script src="http://foundation.zurb.com/assets/js/templates/jquery.js"></script>
+      <script src="http://foundation.zurb.com/assets/js/templates/foundation.js"></script>
+      <script>
+         $(document).foundation();
+          var doc = document.documentElement;
+           doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
 </html>

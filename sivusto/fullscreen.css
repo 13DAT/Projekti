@@ -1,0 +1,30 @@
+   #container {
+      min-height: 1000px;
+    }
+  
+    #fullsized_go_prev, #fullsized_go_next, #fullsized_close, #fullsized_fullscreen {
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+    }
+    #fullsized_go_prev {
+      left: 25px;
+    }
+    #fullsized_go_next {
+      right: 25px;
+    }
+    #fullsized_close {
+      top: 0;
+      right: 0;
+    }
+    #fullsized_fullscreen {
+      top: 0;
+      right: 40px;
+      background-color: green;
+    }
+    :fullscreen #fullsized_fullscreen { background-color: blue; }
+    :-webkit-full-screen #fullsized_fullscreen { background-color: blue; }
+    :-moz-full-screen #fullsized_fullscreen { background-color: blue; }

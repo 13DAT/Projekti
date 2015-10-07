@@ -1,56 +1,25 @@
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<link rel="stylesheet" href="/resources/demos/style.css">
-<link rel="stylesheet" href="dropzone1.css">
-        <title>dropzone</title>
-        <meta charset="UTF-8">
-        <script>
+<script>
             $(function() {
-              $( "#sortable" ).sortable();
-              $( "#sortable" ).disableSelection();
+              $( "#boxi" ).disableSelection();
             });
-        </script>
+</script>
 
-    </head>
+
+</head>
 
     <body>
 <!-- dropzone laatikot  -->
-<ul id="sortable">
-  <li class="ui-state-default">
-      <form action="/file-upload" class="dropzone dz-clickable displayed" id="kaa">
+
+<div id="laatikko">
+  <div class="ui-priority-primary">
+       <div id="container">
+       <form class="dropzone dz-clickable displayed" id="kaa">
+       </div>
       </form>
-  </li>
-</ul>
+  </div>
+</div>
+
     </body>
 <!-- estää kuvien stackaamisen "poistamalla" edellisen kuvan -->
-     <script src="dropzone.js"></script>
-     <script type="text/javascript">
-    Dropzone.options.kaa = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
-     Dropzone.options.kab = {
-        accept: function(file, done) {
-            console.log("uploaded");
-            done();
-        },
-        init:function() {
-            this.on("addedfile", function(){
-                if (this.files[1]!=null){
-                    this.removeFile(this.files[0]);
-                }
-            });
-        }
-    };
-
-</script>
+     <script src="http://cosmo.kpedu.fi/~jonatanlogland/projekti/Projekti/sivusto/dropzone.js"></script>
+    
