@@ -1,30 +1,18 @@
-   #container {
-      min-height: 1000px;
+#container:-webkit-full-screen,
+    #container:-moz-full-screen,
+    #container:-ms-fullscreen,
+    #container:fullscreen {
+    width: 100vw;
+    height: 100vh;
     }
-  
-    #fullsized_go_prev, #fullsized_go_next, #fullsized_close, #fullsized_fullscreen {
-      position: absolute;
-      top: 50%;
-      display: block;
-      width: 30px;
-      height: 30px;
-      background-color: red;
+    #container{
+    border:1px solid red;
+    border-radius: .5em;
+    padding:10px;
     }
-    #fullsized_go_prev {
-      left: 25px;
+    img
+    {
+    width: 100%;
+    height: auto;
     }
-    #fullsized_go_next {
-      right: 25px;
-    }
-    #fullsized_close {
-      top: 0;
-      right: 0;
-    }
-    #fullsized_fullscreen {
-      top: 0;
-      right: 40px;
-      background-color: green;
-    }
-    :fullscreen #fullsized_fullscreen { background-color: blue; }
-    :-webkit-full-screen #fullsized_fullscreen { background-color: blue; }
-    :-moz-full-screen #fullsized_fullscreen { background-color: blue; }
+    

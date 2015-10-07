@@ -24,6 +24,8 @@ if($_SESSION['login'] != 1){
 <link rel="stylesheet" href="/~jonatanlogland/projekti/Projekti/sivusto/footer.css"/>
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable.css" />
 <link rel="stylesheet" href="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/css/jquery-fullsizable-theme.css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
 <script src="http://foundation.zurb.com/assets/js/jquery.js"></script>
 <script src="http://foundation.zurb.com/templates/js/foundation.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -66,7 +68,11 @@ if($_SESSION['login'] != 1){
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
 <?php include("template-isolaatikko.php");?>
 
-<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
+
+
+<div id="container">
+<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success" id="toggle_fullscreen">Koko näyttö</a></li>
+</div>
 
 </ul>
 </div>
@@ -123,17 +129,14 @@ if($_SESSION['login'] != 1){
   '.js><\/script>')
   </script>
 <script>
-    $(document).foundation();
-  </script>
-<script>
 
       $(document).foundation();
 
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="/~erkkasailynoja/bower/jquery172.js"></script>
-  <script src="/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
+
+
   <script>
     $(function() {
       $(a.avaa).fullsizable();

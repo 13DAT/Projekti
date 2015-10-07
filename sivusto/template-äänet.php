@@ -54,7 +54,7 @@ if($_SESSION['login'] != 1){
 <div class="small-12 columns">
 <div class="nav-bar left">
 <ul class="button-group">
-<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template.php" class="button radius">Takaisin</a></li>
+<li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template1.php" class="button radius">Takaisin</a></li>
 </ul>
 </div>
 
