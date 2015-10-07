@@ -88,63 +88,47 @@ if($_SESSION['login'] != 1){
  								$last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. 
  								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. 
  								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->ynimi );
- 								}
-                            
+ 								} 
                             else{ echo "Pelle";}
                             echo "$num_rows Rows\n";
                             
-                    
 						if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime()).'.jpg';
                         	
-                        
                            if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
                             $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi, SID) VALUES('$targetFileName','$fileName','$SID');
                                      UPDATE projekti_kuvat           
                                      WHERE id = ID;;");
                             }}
-                        	
-                      					  
-					  
+                        	                      							  
                       if($tulos=$yhteys->multi_query($sql)) {
                       echo " ";}
                       else {echo " ";}
-                    
-                                         
+                                 
    #echo '<pre>';
    #var_export($GLOBALS);
    #echo '</pre>';
     $yhteys->close();
-?>
-
-          
+?>   
 </div>
 </div>
-
 <div class="row">
 <div class="small-12 columns">
 <hr>
 </div>
 </div>
 </ul>
-
 <div class="row">
 <div class="small-12 columns">
-
 <div id="clearfooter"></div>
 <div class="footer">
 <p>&copy; 2015 13DAT</p>
 </div>
-
 </div>
 </div>
-
-
-
-
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
