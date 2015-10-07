@@ -83,15 +83,15 @@ if($_SESSION['login'] != 1){
                     $tulos = mysqli_query($yhteys,$sqli);
 							$num_rows = mysqli_num_rows($tulos);
                             if($num_rows >= 2){
-                            	$tulos2 = mysqli_query($yhteys, "SELECT * FROM projekti_kuvat WHERE SID = *;");
+                            	$tulos2 = mysqli_query($yhteys, "SELECT * FROM projekti_kuvat WHERE SID = 114;");
  								$koodinimi = mysqli_fetch_object($tulos2);
  								$last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. 
  								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. 
  								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->ynimi );
  								} 
-                            else{ echo "Pelle";}
-                            echo "$num_rows Rows\n";
+                            else{ echo " ";}
                             
+                  
 						if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
