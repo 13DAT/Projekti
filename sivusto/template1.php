@@ -135,8 +135,8 @@ if($_SESSION['login'] != 1){
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
-<script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/jquery172.js"></script>
-  <script src="http://cosmo.kpedu.fi/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
+<script src="/~erkkasailynoja/bower/jquery172.js"></script>
+  <script src="/~erkkasailynoja/bower/bower_components/jquery-fullsizable/js/jquery-fullsizable.js"></script>
   <script>
     $(function() {
       $(a.avaa).fullsizable();

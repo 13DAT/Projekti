@@ -65,7 +65,7 @@ if($_SESSION['login'] != 1){
 <li><a href="/~jonatanlogland/projekti/Projekti/sivusto/template-upload.php" class="button radius success">Lataa kuvia</a></li>
 <?php include("template-isolaatikko.php");?>
 
-<li><a href="/~anttitaipale/projekti/Projekti/kuvat/<?php echo $auto->koodinimi; ?>" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
+<li><a href="#" class="button radius success avaa" rel="gallery-1" alt="open gallery">Koko näyttö</a></li>
 
 </ul>
 </div>
