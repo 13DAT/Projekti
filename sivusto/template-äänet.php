@@ -69,11 +69,11 @@ if($_SESSION['login'] != 1){
 <div class="row">
 <div class="small-12 columns">
 <div id="laatikko">
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone dz-clickable displayed" action="template-äänet.php" method="POST">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template_äänet.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
-      </div>
-        
+
+        <div class="tableresponsive">
         <?php
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
@@ -94,11 +94,11 @@ if($_SESSION['login'] != 1){
                         echo "\n";
                     }
                     }
-                    //if($tulos=$yhteys->multi_query($sql)) {
-                       // echo " ";}
-                    //else {
-                       // echo " " . " " . $sql . " " . $yhteys->error;
-                    //}
+                    if($tulos=$yhteys->multi_query($sql)) {
+                        echo " ";}
+                    else {
+                     //   echo " " . " " . $sql . " " . $yhteys->error;
+                    }
             $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
             if(mysqli_connect_errno()) {
                 die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
@@ -106,8 +106,8 @@ if($_SESSION['login'] != 1){
             $yhteys->set_charset('utf8');
                 $tulos = mysqli_query($yhteys, "SELECT DISTINCT * 
                                                 FROM projekti_äänet");
-		
-        echo  "<table width=30%><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";
+
+        echo  "<table><thead><tr><th>Nimi</th><th>Avaa ääni</td></tr></thead>";
 
         while($rivi = mysqli_fetch_array($tulos)) {
 
@@ -129,14 +129,15 @@ if($_SESSION['login'] != 1){
 
             mysqli_close($yhteys);
         ?>
-        <audio id='myTune' name='audioo'>
-            <source src="/~patriksipi/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
+		<audio id='myTune' name='audioo'>
+            <source src="http://cosmo.kpedu.fi/~patriksipi/Projekti/Projekti/äänet/<?php echo $rivi->Pitka; ?>">
         </audio>
         </table>
-
+        </div>
+        </p>
 </div>         
-
-
+</div>
+</div>
 
 <div class="row">
 <div class="small-12 columns">
@@ -178,10 +179,9 @@ if($_SESSION['login'] != 1){
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
 
-
-
-</body>
-
-
+	<script src="/~jannenyman/testi/proto/dropzone.js"></script>
+    <link type="css" media="screen" rel="stylesheet" href="~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.css" />
+    <script type="javascript" src="~jonatanlogland/Foundation/zurb-responsive-tables-0d34bc6/responsive-tables.js"></script>
  <script src="/~jannenyman/testi/proto/dropzone.js"></script>
+</body>
 </html>

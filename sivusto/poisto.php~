@@ -8,7 +8,7 @@ function confirm_alert(node) {
 <form action="template.php" method="GET">
       <button name="submit" class="button alert" value="TRUE" onclick="return confirm_alert(this);">Poista kaikki kuvat</button>
   </form>
-</div>
+
 
 
 <?php

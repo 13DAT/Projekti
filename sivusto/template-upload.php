@@ -31,11 +31,10 @@ if($_SESSION['login'] != 1){
 
 <div class="row">
 <div class="small-12 columns">
-<header>
 <h1 style="text-align:center; font-family:Verdana; font-size:300%">Lataa tiedosto</h1>
 <div class="nav-bar right">
-<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li></div>
-</header>
+<a href="/~jonatanlogland/projekti/Projekti/sivusto/template-logout.php" class="button radius">Kirjaudu ulos</a></li>
+</div>
 </div>
 </div>
 
@@ -65,7 +64,7 @@ if($_SESSION['login'] != 1){
 <div class="row">
 <div class="small-12 columns">
 
-<center>
+
 <div id="laatikko">
   <div class="ui-priority-primary">
 <form enctype="multipart/form-data" type="file" name="userfile" class="dropzone dz-clickable displayed" action="template-upload.php" method="POST">
@@ -73,7 +72,7 @@ if($_SESSION['login'] != 1){
     </form>
 </div>
 </div>
-</center>
+
 <?php
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {

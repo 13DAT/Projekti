@@ -1,10 +1,3 @@
-<script>
-function confirm_alert(node) {
-    return confirm("Oletko varma että haluat poistaa kaikki kuvat?");
-}
-</script>
-
-
 <form action="template.php" method="GET">
       <button name="submit" class="button alert" value="TRUE" onclick="return confirm_alert(this);">Poista kaikki kuvat</button>
   </form>

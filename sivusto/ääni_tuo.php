@@ -1,7 +1,4 @@
 <?php
-session_start();
-?>
-<?php
           $id = $_GET['id'];
 
           $yhteys=mysqli_connect("localhost","data14","mv2Mqbm888DvqbjT","data14");
@@ -15,10 +12,10 @@ session_start();
 
 
 
-          // aja SQL lause
+         
           $res = mysqli_query($yhteys,$sql) or die("<br>$sql<br>$id ");
 
-          // tulosta se
+         
           $auto = mysqli_fetch_object($res);
 
 
