@@ -69,11 +69,11 @@ if($_SESSION['login'] != 1){
 <div class="row">
 <div class="small-12 columns">
 <div id="laatikko">
-<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template_äänet.php" method="POST">
+<form enctype="multipart/form-data" type="file" name="userfile" class="dropzone" action="template-äänet.php" method="POST">
         <input type="hidden" name="MAX_FILE_SIZE" value="50000000" />
     </form>
-
-        <div class="tableresponsive">
+</div>
+        <div id="laatikko1">
         <?php
     $yhteys=new mysqli("localhost","data14","mv2Mqbm888DvqbjT","data14");
     if(mysqli_connect_errno()) {
@@ -113,7 +113,7 @@ if($_SESSION['login'] != 1){
 
         echo "<tr>
                   <td>".$rivi['Nimi']."</td> 
-                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Näytä</a></td>
+                  <td><a href=\"template.php?id=".$rivi['ID']."\" class='tiny round button'>Valitse</a></td>
               </tr>";
 
                 session_start();
