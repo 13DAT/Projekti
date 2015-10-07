@@ -79,66 +79,56 @@ if($_SESSION['login'] != 1){
         die("MySQL, virhe yhteyden luonnissa:" . mysqli_connect_error());
     }
     $yhteys->set_charset('utf8');
-                    #$sqli = ("SELECT COUNT(SID) FROM projekti_kuvat");           
-                        #if($sqli == 5){             
-                        #echo "dwa";}
-                        #else{ echo "Pelle";}
-                        #$num_rows = mysqli_num_rows($sqli);
-						#echo "$num_rows Rows\n";
-                    if(!empty($_FILES)){
+                    $sqli = ("SELECT *  FROM projekti_kuvat");           
+                    $tulos = mysqli_query($yhteys,$sqli);
+							$num_rows = mysqli_num_rows($tulos);
+                            if($num_rows >= 2){
+                            	$tulos2 = mysqli_query($yhteys, "SELECT * FROM projekti_kuvat WHERE SID = *;");
+ 								$koodinimi = mysqli_fetch_object($tulos2);
+ 								$last_line = system('convert'.' '."/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. 
+ 								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->koodinimi.' '. '+append'.' '. 
+ 								"/home/anttitaipale/public_html/projekti/Projekti/kuvat/".$koodinimi->ynimi );
+ 								} 
+                            else{ echo "Pelle";}
+                            echo "$num_rows Rows\n";
+                            
+						if(!empty($_FILES)){
                         $targetDir = "/home/anttitaipale/public_html/projekti/Projekti/kuvat/";
                         $fileName = $_FILES['file']['name'];
                         $targetFileName = md5(microtime()).'.jpg';
-                        
-                           
-                        if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
+                        	
+                           if(move_uploaded_file($_FILES['file']['tmp_name'],$targetDir.$targetFileName)){
                             echo "Lataus onnistui\n";
                             $sql = ("INSERT INTO projekti_kuvat (koodinimi, nimi, SID) VALUES('$targetFileName','$fileName','$SID');
                                      UPDATE projekti_kuvat           
                                      WHERE id = ID;;");
-                        } else {
-                            echo " ";
-                        }
-                    } else {
-                        echo " ";
-                    }
-                    if($tulos=$yhteys->multi_query($sql)) {
-                        echo " ";}
-                    else {
-                        echo " ";
-                    }
-                  
-   # echo '<pre>';
-    #var_export($GLOBALS);
-    #echo '</pre>';
+                            }}
+                        	                      							  
+                      if($tulos=$yhteys->multi_query($sql)) {
+                      echo " ";}
+                      else {echo " ";}
+                                 
+   #echo '<pre>';
+   #var_export($GLOBALS);
+   #echo '</pre>';
     $yhteys->close();
-?>
-
-          
+?>   
 </div>
 </div>
-
 <div class="row">
 <div class="small-12 columns">
 <hr>
 </div>
 </div>
 </ul>
-
 <div class="row">
 <div class="small-12 columns">
-
 <div id="clearfooter"></div>
 <div class="footer">
 <p>&copy; 2015 13DAT</p>
 </div>
-
 </div>
 </div>
-
-
-
-
 <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
